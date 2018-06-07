@@ -1,0 +1,26 @@
+﻿{
+  "NEWS": [
+    { "NewsClose": 0.4 },
+    { "NewsOpen": 0.6 }
+  ],
+  "SAC": [
+    { "TicketsTop": 0.65 },
+    { "TicketsBottom": 0.4 }
+  ],
+  "CANTEENS": [
+    { "CanteensTop": 0.7 },
+    { "CanteensBottom": 0.35 }
+  ],
+  "SAS_0": [
+    { "Stering_Left": 0.75 },
+    { "Stering_Right": 0.85 }
+  ],
+  "SAS_1": [
+    { "Stering_Right": 0.85 },
+    { "Stering_Left": 0.75 }
+  ],
+  "WEATHER": [
+    { "Weather_Left": 0.70 },
+    { "Weather_Right": 0.70 }
+  ]
+}
