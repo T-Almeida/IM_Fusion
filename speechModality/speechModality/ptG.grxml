@@ -27,6 +27,12 @@ root="rootRule">
 				<ruleref uri="#weatherAPI"/>
 			</item>
       <item>
+        <ruleref uri="#weatherDays"/>
+        <tag>out.dayType=rules.weatherDays.dayType;</tag>
+        <tag>out.dayDesc=rules.weatherDays.day;</tag>
+        <tag>out.weekDayNumber=rules.weatherDays.weekdayNumber;</tag>
+      </item>
+      <item>
         <ruleref uri="#help"/>
       </item>
       <item>

@@ -8,6 +8,13 @@ import scxmlgen.interfaces.IModality;
 
 public enum Speech implements IModality{  
 
+        DAYS_DOMINGO("[dayOfWeek][domingo][0]",1500),
+        DAYS_SEGUNDA("[dayOfWeek][segunda][1]",1500),
+        DAYS_TERCA("[dayOfWeek][terça][2]",1500),
+        DAYS_QUARTA("[dayOfWeek][quarta][3]",1500),
+        DAYS_QUINTA("[dayOfWeek][quinta][4]",1500),
+        DAYS_SEXTA("[dayOfWeek][sexta][5]",1500),
+        DAYS_SABADO("[dayOfWeek][sábado][6]",1500),
 	SQUARE("[shape][SQUARE]",1500),
         TRIANGLE("[shape][TRIANGLE]",1500),
         CIRCLE("[shape][CIRCLE]",1500),

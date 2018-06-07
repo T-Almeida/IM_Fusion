@@ -35,7 +35,7 @@ public class GenFusionSCXML {
     fg.Complementary(Speech.CIRCLE, SecondMod.BLUE, Output.CIRCLE_BLUE);
     fg.Complementary(Speech.CIRCLE, SecondMod.YELLOW, Output.CIRCLE_YELLOW);
     
-    //fg.Single(Speech.CIRCLE, Output.CIRCLE_RED);  //EXAMPLE
+    fg.Single(Speech.DAYS_DOMINGO, Output.TRIANGLE_BLUE);  //EXAMPLE
     
     //fg.Redundancy(Speech.CIRCLE_RED, SecondMod., Output.CIRCLE);  //EXAMPLE
     
