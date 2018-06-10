@@ -43,7 +43,7 @@ namespace GestureModality
             connectionLoop: while (true)
                 {
 
-                    server = new NamedPipeServerStream("APPCALLBACK");
+                    server = new NamedPipeServerStream("GUESTURESCALLBACK");
                     reader = new StreamReader(server);
                     server.WaitForConnection();
                     Console.WriteLine("NOVA CONEXAO");

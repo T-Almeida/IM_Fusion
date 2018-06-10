@@ -5,10 +5,11 @@ import scxmlgen.interfaces.IModality;
 
 public enum Guestures implements IModality{
 
-    Weather("[color][RED]",1500),
-    BLUE("[color][BLUE]",1500),
-    YELLOW("[color][YELLOW]",1500),
-    SQUARE_YELLOW("[shape][SQUARE][color][YELLOW]",1500)
+    WEATHER("[WEATHER][TYPE1][tomorrow][tomorrow][]",2500),
+    CANTEENS("[CANTEENS][TYPE5]",2500),
+    PARQUES("[SAS][TYPE1][SUBTYPE1]",2500),
+    SENHAS("[SAC][TYPE1]",2500),
+    NEWS("[NEWS][TYPE1]",2500)
     ;
     
     private String event;

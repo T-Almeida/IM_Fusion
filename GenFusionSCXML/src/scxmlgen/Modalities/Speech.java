@@ -15,7 +15,7 @@ public enum Speech implements IModality{
         DAYS_QUINTA("[dayOfWeek][quinta][4]",1500),
         DAYS_SEXTA("[dayOfWeek][sexta][5]",1500),
         DAYS_SABADO("[dayOfWeek][sábado][6]",1500),
-	SQUARE("[shape][SQUARE]",1500),
+	PARQUES_LUGARES_LINGUAS("[SAS][TYPE2][SUBTYPE3][Linguas]",1500),
         TRIANGLE("[shape][TRIANGLE]",1500),
         CIRCLE("[shape][CIRCLE]",1500),
         CIRCLE_RED("[shape][CIRCLE][color][RED]",1500);

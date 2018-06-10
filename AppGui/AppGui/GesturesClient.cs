@@ -10,23 +10,32 @@ namespace AppGui
 {
     class GesturesClient
     {
-        private NamedPipeClientStream client;
-        private StreamWriter writer;
+        private NamedPipeClientStream clientGestures;
+        private StreamWriter writerGuestures;
+
+        private NamedPipeClientStream clientSpeak;
+        private StreamWriter writerSpeak;
+
         private Action ttsGreatingsCallback;
 
         public GesturesClient(Action ttsGreatingsCallback)
         {
-         
-            client = new NamedPipeClientStream("APPCALLBACK");
-            writer = new StreamWriter(client);
+
+            clientGestures = new NamedPipeClientStream("GUESTURESCALLBACK");
+            writerGuestures = new StreamWriter(clientGestures);
+
+            clientSpeak = new NamedPipeClientStream("SPEAKCALLBACK");
+            writerSpeak = new StreamWriter(clientSpeak);
+
             this.ttsGreatingsCallback = ttsGreatingsCallback;
 
         }
 
         public void connect() {
             Task.Factory.StartNew(()=> {
-                Console.WriteLine("Wait connection");
-                client.Connect();
+                Console.WriteLine("Wait connection to GUESTURES AND SPEAK");
+                clientGestures.Connect();
+                clientSpeak.Connect();
                 Console.WriteLine("Connected");
                 ttsGreatingsCallback();
             });
@@ -35,40 +44,49 @@ namespace AppGui
         }
 
         private void send(string message, Action f) {
-            //if (client.IsConnected)
-            //{
-                try
+
+            try
+            {
+                writerGuestures.WriteLine(message);
+                writerGuestures.Flush();
+
+                writerSpeak.WriteLine(message);
+                writerSpeak.Flush();
+            }
+            catch (Exception e)
+            { //Para o caso do server ter levado reboot a meio da conexao
+                Console.WriteLine("Retry connect because of error: " + e.Message);
+                /*
+                Task.Factory.StartNew(() =>
                 {
-                    writer.WriteLine(message);
-                    writer.Flush();
-                }
-                catch (Exception e)
-                { //Para o caso do server ter levado reboot a meio da conexao
-                    Console.WriteLine("Retry connect because of error: " + e.Message);
-                
-                    Task.Factory.StartNew(() =>
-                    {
-                        Console.WriteLine("Wait connection");
-                        client.Connect();
-                        Console.WriteLine("Connected");
-                        f();
-                    });
-                }
-            //}
-            //else { Console.WriteLine("Não estou connectado ao server"); }
+                    Console.WriteLine("Wait connection");
+                    if (!clientGestures.IsConnected)
+                        clientGestures.Connect();
+                    if (!clientSpeak.IsConnected)
+                        clientSpeak.Connect();
+                    Console.WriteLine("Connected");
+                    f();
+                });*/
+            }
+
         }
         private void send(string message)
         {
-            //if (client.IsConnected)
-            //{
-                try
-                {
-                    writer.WriteLine(message);
-                    writer.Flush();
-                }
-                catch (Exception e) { Console.WriteLine("ATENçÃO esta execao aconteceu!!!! linha 65 nSpeachClient ver "); }
-            //}
-            //else { Console.WriteLine("Não estou connectado ao server"); }
+
+            try
+            {
+                writerGuestures.WriteLine(message);
+                writerGuestures.Flush();
+            }
+            catch (Exception e) { Console.WriteLine("ATENçÃO esta execao aconteceu!!!! linha 65 nSpeachClient ver "); }
+
+            try
+            {
+                writerSpeak.WriteLine(message);
+                writerSpeak.Flush();
+            }
+            catch (Exception e) { Console.WriteLine("ATENçÃO esta execao aconteceu!!!! linha 65 nSpeachClient ver "); }
+
         }
 
         public void sendTtsStop() {
@@ -87,7 +105,8 @@ namespace AppGui
 
         public void close() {
             send("<CLOSE>");
-            client.Close();
+            clientGestures.Close();
+            clientSpeak.Close();
         }
     }
 }

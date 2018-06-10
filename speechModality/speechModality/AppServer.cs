@@ -35,7 +35,7 @@ namespace speechModality
             Task.Factory.StartNew(() => {
         connectionLoop: while (true) {
 
-                server = new NamedPipeServerStream("APPCALLBACK");
+                server = new NamedPipeServerStream("SPEAKCALLBACK");
                 reader = new StreamReader(server);
                 server.WaitForConnection();
                 Console.WriteLine("NOVA CONEXAO");
