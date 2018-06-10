@@ -16,7 +16,8 @@ namespace speechModality
         private Grammar grYesNo;
         public event EventHandler<SpeechEventArg> Recognized;
 
-        
+        private List<Tuple<string, string>> specialCharacters;
+
 
         private AppServer appServer;
 
@@ -35,8 +36,13 @@ namespace speechModality
         public SpeechMod(TextBox textBox)
         {
 
-            
-            
+
+            specialCharacters = new List<Tuple<string, string>>();
+            specialCharacters.Add(new Tuple<string, string>("é","<e>"));
+            specialCharacters.Add(new Tuple<string, string>("í", "<i>"));
+            specialCharacters.Add(new Tuple<string, string>("ã", "<a_till>"));
+
+
             Console.WriteLine("OK...");
             //init LifeCycleEvents..
             lce = new LifeCycleEvents("ASR", "FUSION","speech-1", "acoustic", "command"); // LifeCycleEvents(string source, string target, string id, string medium, string mode)
@@ -123,14 +129,21 @@ namespace speechModality
                 resetGrammar();
                 json.Append("\"type\":\"NORMAL\",");
 
-                if (e.Result.Confidence > 0.95)
+                if (e.Result.Confidence > 0.7)
                 {
                     json.Append("\"confidence\":\"GOOD\",");
                 }
                 else if (e.Result.Confidence > 0.30)
                 {
                     json.Append("\"confidence\":\"MEDIUM\",");
-                    json.Append("\"inputText\":\"" + e.Result.Text + "\",");
+
+                    //handle special characters
+                    string inputText = e.Result.Text;
+                    foreach (var t in specialCharacters) {
+                        inputText = inputText.Replace(t.Item1,t.Item2);
+                    }
+                    
+                    json.Append("\"inputText\":\"" + inputText + "\",");
                     switchYesNoGrammar(); //this method change grammars Enabled Method
                 }
                 else
@@ -151,7 +164,9 @@ namespace speechModality
             }
             json.Remove(json.Length-1,1);
             
-            json.Append("] }");
+            json.Append("]}");
+
+            Console.WriteLine(json.ToString());
 
             var exNot = lce.ExtensionNotification(e.Result.Audio.StartTime+"", e.Result.Audio.StartTime.Add(e.Result.Audio.Duration)+"",e.Result.Confidence, json.ToString());
             mmic.Send(exNot);
