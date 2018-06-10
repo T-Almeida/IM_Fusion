@@ -70,15 +70,16 @@ namespace AppGui
             }
 
         }
-        private void send(string message)
+        private void send(string message,bool news = false)
         {
-
-            try
-            {
-                writerGuestures.WriteLine(message);
-                writerGuestures.Flush();
+            if (!news) { //if dynamic add dont send to guestures
+                try
+                {
+                    writerGuestures.WriteLine(message);
+                    writerGuestures.Flush();
+                }
+                catch (Exception e) { Console.WriteLine("ATENçÃO esta execao aconteceu!!!! linha 65 nSpeachClient ver "); }
             }
-            catch (Exception e) { Console.WriteLine("ATENçÃO esta execao aconteceu!!!! linha 65 nSpeachClient ver "); }
 
             try
             {
@@ -101,6 +102,12 @@ namespace AppGui
         public void sendTtsFirstStart()
         {
             send("<FIRST_START>", sendTtsFirstStart);
+        }
+
+        public void sendDynamicNews(List<string> news)
+        {
+            Console.WriteLine("\nADD DYNAMIC\n");
+            send("<DYNAMICADD>" + String.Join("|", news),true);
         }
 
         public void close() {

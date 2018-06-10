@@ -435,7 +435,7 @@ namespace AppGui
                         }
 
                         Console.WriteLine("UPDATE GRAMMAR");
-                        //t.addNewsToGrammar(lNews);
+                        t.addNewsToGrammar(lNews);
 
                         break;
                     case "TYPE2":
