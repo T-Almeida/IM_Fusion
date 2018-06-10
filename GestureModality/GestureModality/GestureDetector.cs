@@ -57,8 +57,9 @@ namespace GestureModality
             serverPipe.run();
 
             //init LifeCycleEvents..
-            lce = new LifeCycleEvents("GESTURES", "FUSION", "gesture-1", "haptics", "command"); // LifeCycleEvents(string source, string target, string id, string medium, string mode)
-            mmic = new MmiCommunication("localhost",9876,"User1", "GESTURES");  //PORT TO FUSION - uncomment this line to work with fusion later
+            //new LifeCycleEvents("GESTURES", "FUSION", "gesture-1", "haptics", "command")
+            lce = new LifeCycleEvents("TOUCH", "FUSION", "touch-1", "touch", "command"); // LifeCycleEvents(string source, string target, string id, string medium, string mode)
+            mmic = new MmiCommunication("localhost",9876,"User1", "TOUCH");  //PORT TO FUSION - uncomment this line to work with fusion later
             //mmic = new MmiCommunication("localhost", 8000, "User1", "GESTURES"); // MmiCommunication(string IMhost, int portIM, string UserOD, string thisModalityName)
 
             mmic.Send(lce.NewContextRequest());
