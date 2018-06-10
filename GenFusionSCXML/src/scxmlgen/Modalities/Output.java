@@ -10,26 +10,29 @@ public enum Output implements IOutput{
     SQUARE_BLUE("[shape][SQUARE][color][BLUE]"),
     SQUARE_YELLOW("[shape][SQUARE][color][YELLOW]"),
     TRIANGLE_RED("[shape][TRIANGLE][color][RED]"),
-    TRIANGLE_BLUE("[shape][TRIANGLE][color][BLUE]"),
+    TRIANGLE_BLUE("[]"),
     TRIANGLE_YELLOW("[shape][TRIANGLE][color][YELLOW]"),
     CIRCLE_RED("[shape][CIRCLE][color][RED]"),
     CIRCLE_BLUE("[shape][CIRCLE][color][BLUE]"),
     CIRCLE_YELLOW("[shape][CIRCLE][color][YELLOW]"),
-    CIRCLE("[shape][CIRCLE]")
+    CIRCLE("[shape][CIRCLE]"),
+    WEATHER_DOMINGO("[WEATHER][TYPE1][dayOfWeek][domingo][0]")
     ;
     
     
     
-    private String event;
+    private final String event;
 
     Output(String m) {
         event=m;
     }
     
+    @Override
     public String getEvent(){
         return this.toString();
     }
 
+    @Override
     public String getEventName(){
         return event;
     }

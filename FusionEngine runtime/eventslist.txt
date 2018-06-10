@@ -4,3 +4,4 @@
 [shape][SQUARE]
 [shape][CIRCLE]
 [color][BLUE]
+[dayOfWeek][domingo][0]

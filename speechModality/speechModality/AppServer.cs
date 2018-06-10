@@ -56,6 +56,7 @@ namespace speechModality
                     switch (line)
                     {
                         case "<START>":
+                        case "<FIRST_START>":
                             sre.RecognizeAsyncStop();//try stop rec
                             //text.Text = "[RECOGNIZED STOPED]";
                             textBox.Dispatcher.BeginInvoke((Action)(() => {

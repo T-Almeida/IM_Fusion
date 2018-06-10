@@ -103,6 +103,9 @@ namespace speechModality
 
             
             StringBuilder json = new StringBuilder("{");
+
+            json.Append("\"source\":\"VOZ\",");
+
             if (grYesNo.Enabled)
             {
                 json.Append("\"type\":\"YESNO\",");

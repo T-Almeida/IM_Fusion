@@ -7,6 +7,7 @@ package genfusionscxml;
 
 import java.io.IOException;
 import scxmlgen.Fusion.FusionGenerator;
+import scxmlgen.Modalities.Guestures;
 import scxmlgen.Modalities.Output;
 import scxmlgen.Modalities.Speech;
 import scxmlgen.Modalities.SecondMod;
@@ -33,9 +34,13 @@ public class GenFusionSCXML {
     fg.Complementary(Speech.TRIANGLE, SecondMod.YELLOW, Output.TRIANGLE_YELLOW);
     fg.Complementary(Speech.CIRCLE, SecondMod.RED, Output.CIRCLE_RED);
     fg.Complementary(Speech.CIRCLE, SecondMod.BLUE, Output.CIRCLE_BLUE);
-    fg.Complementary(Speech.CIRCLE, SecondMod.YELLOW, Output.CIRCLE_YELLOW);
+    fg.Complementary(Speech.DAYS_DOMINGO, SecondMod.RED, Output.WEATHER_DOMINGO);
     
-    fg.Single(Speech.DAYS_DOMINGO, Output.TRIANGLE_BLUE);  //EXAMPLE
+    
+    
+    //fg.Single(Speech.DAYS_DOMINGO, Output.TRIANGLE_BLUE);  //EXAMPLE
+    
+    //
     
     //fg.Redundancy(Speech.CIRCLE_RED, SecondMod., Output.CIRCLE);  //EXAMPLE
     

@@ -52,9 +52,30 @@ namespace AppGui
 
             
             var doc = XDocument.Parse(e.Message);
-            var com = doc.Descendants("command").FirstOrDefault().Value;
+            var com = doc.Descendants("command");
+
+            if (com.Count() > 1)//fusion
+            {
+                dynamic json = JsonConvert.DeserializeObject(com.ElementAt(0).Value);
+                var recognized_command = json["recognized"];
+
+                foreach (var commands in com) {
+                    json = JsonConvert.DeserializeObject(commands.Value);
+
+                    if (json["source"] != null) {
+                        json["recognized"] = recognized_command;
+                        break;
+                    }
+                }
+
+                dManager.handleIMcommand((string)json.ToString());
+
+            }
+            else {
+                dManager.handleIMcommand(com.FirstOrDefault().Value);
+            }
+
             
-            dManager.handleIMcommand(com);
 
         }
     }
