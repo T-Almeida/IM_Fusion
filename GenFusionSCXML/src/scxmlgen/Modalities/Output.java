@@ -51,8 +51,17 @@ public enum Output implements IOutput{
     WEATHER_DAYSNUMBER_30("[WEATHER][TYPE1][numberOfDay][30][]"),
     WEATHER_DAYSNUMBER_31("[WEATHER][TYPE1][numberOfDay][31][]"),
     
-    PARQUES_LUGARES_LINGUAS("[SAS][TYPE2][SUBTYPE3][Linguas]"),
-    PARQUES_LUGARES_BIBLIOTECA("[SAS][TYPE2][SUBTYPE3][Biblioteca]")
+    //parques
+    PARQUE_BIBLIOTECA("[SAS][TYPE2][SUBTYPE3][Biblioteca]"),
+    PARQUE_RESIDENCIAS("[SAS][TYPE2][SUBTYPE3][Residencias]"),
+    PARQUE_SUBTERRANEO("[SAS][TYPE2][SUBTYPE3][Subterraneo]"),
+    PARQUE_CERAMICA("[SAS][TYPE2][SUBTYPE3][Ceramica]"),
+    PARQUE_LINGUAS("[SAS][TYPE2][SUBTYPE3][Linguas]"),
+    PARQUE_INCUBADORA("[SAS][TYPE2][SUBTYPE3][Incubadora]"),
+    PARQUE_ISCAAPUBLICO("[SAS][TYPE2][SUBTYPE3][ISCAA Publico]"),
+    PARQUE_GERAL("[SAS][TYPE1][SUBTYPE1]");
+
+    
     ;
     
     

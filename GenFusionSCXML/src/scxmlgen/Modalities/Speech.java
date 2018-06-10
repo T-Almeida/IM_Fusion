@@ -53,9 +53,22 @@ public enum Speech implements IModality{
     DAYSNUMBER_28("[numberOfDay][28][]",GenFusionSCXML.TIMEOUT),
     DAYSNUMBER_29("[numberOfDay][29][]",GenFusionSCXML.TIMEOUT),
     DAYSNUMBER_30("[numberOfDay][30][]",GenFusionSCXML.TIMEOUT),
-    DAYSNUMBER_31("[numberOfDay][31][]",GenFusionSCXML.TIMEOUT);
+    DAYSNUMBER_31("[numberOfDay][31][]",GenFusionSCXML.TIMEOUT),
     
-    private static int a=2;
+    //parques
+    PARQUE_BIBLIOTECA("[Biblioteca]",GenFusionSCXML.TIMEOUT),
+    PARQUE_RESIDENCIAS("[Residencias]",GenFusionSCXML.TIMEOUT),
+    PARQUE_SUBTERRANEO("[Subterraneo]",GenFusionSCXML.TIMEOUT),
+    PARQUE_CERAMICA("[Ceramica]",GenFusionSCXML.TIMEOUT),
+    PARQUE_LINGUAS("[Linguas]",GenFusionSCXML.TIMEOUT),
+    PARQUE_INCUBADORA("[Incubadora]",GenFusionSCXML.TIMEOUT),
+    PARQUE_ISCAAPUBLICO("[ISCAA]",GenFusionSCXML.TIMEOUT),
+    
+    
+    
+    ;
+
+ 
     private String event; 
     private int timeout;
     Speech(String m, int time) {

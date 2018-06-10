@@ -41,6 +41,7 @@ namespace AppGui
 
             specialCharacters = new List<Tuple<string, string>>();
             specialCharacters.Add(new Tuple<string, string>("é", "<e>"));
+            specialCharacters.Add(new Tuple<string, string>("ê", "<e_acent>"));
             specialCharacters.Add(new Tuple<string, string>("í", "<i>"));
             specialCharacters.Add(new Tuple<string, string>("ã", "<a_till>"));
 

@@ -65,7 +65,7 @@ namespace GestureModality
                         {
                             case "<START>":
                                 isSpeakRunning = true;
-                                Task.Delay(1500).ContinueWith(t => resetWindow());
+                                //Task.Delay(1500).ContinueWith(t => resetWindow());
 
                                 break;
                             case "<FIRST_START>":
