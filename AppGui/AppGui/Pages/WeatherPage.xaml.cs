@@ -24,6 +24,7 @@ namespace AppGui.Pages
         public WeatherPage(WeatherData weather)
         {
             InitializeComponent();
+            this.data.Text += weather.DayDescription;
             this.description.Text = weather.Description;
             this.mintemp.Text = weather.MinTemp.ToString() + " graus";
             this.maxtemp.Text = weather.MaxTemp.ToString() + " graus";

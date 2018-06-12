@@ -92,7 +92,9 @@ namespace AppGui
                     dManager.displayParks(getAllPark(json));
                     break;
                 case "TYPE2":
-                    dManager.manageDialogueSAS(getPark(json, args[2]), args);
+                    ParkData park = getPark(json, args[2]);
+                    dManager.displayParks(new List<ParkData>(1) { park });
+                    dManager.manageDialogueSAS(park, args);
                     break;
 
             }

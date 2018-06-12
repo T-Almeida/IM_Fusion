@@ -21,14 +21,15 @@ namespace AppGui
     /// </summary>
     public partial class CanteensPage : Page
     {
-        public CanteensPage(List<CanteenData> meals)
+        public CanteensPage(List<CanteenData> meals, string date)
         {
             InitializeComponent();
-            loadData(meals);
+            loadData(meals, date);
         }
 
-        private void loadData(List<CanteenData> meals)
+        private void loadData(List<CanteenData> meals, string date)
         {
+            this.title.Text += " " + date;
             List<CanteenData> filteredList = meals.Where(x => x.Disabled.Equals("0")).ToList();
             cantinas.ItemsSource = filteredList;
         }

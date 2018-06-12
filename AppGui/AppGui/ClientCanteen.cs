@@ -56,7 +56,7 @@ namespace AppGui
                 if (e.InnerException is WebException)
                 {
                     dManager.manageDialogueWeatherConnectionErrors("web exception", "das cantinas");
-                    // meter imagem na cena dos gestos
+                  
                 }
 
             }
@@ -64,7 +64,7 @@ namespace AppGui
             catch (TaskCanceledException e)
             {
                 dManager.manageDialogueWeatherConnectionErrors("timeout", "das cantinas");
-                // meter imagem na cena dos gestos
+                
             }
         }
 
@@ -74,7 +74,7 @@ namespace AppGui
             if (!getResponseTask.IsCompleted)
             {
                 dManager.manageDialogueWeatherConnectionErrors("warning timeout", "das cantinas");
-                // meter imagem a pensar na cena dos gestos
+             
             }
         }
 
@@ -135,6 +135,7 @@ namespace AppGui
             Tuple<DateTime, string> date_descripton;
 
             string meal = "";
+            string dayDescription = "";
 
             if (args.Length >= 2)
             {
@@ -155,7 +156,7 @@ namespace AppGui
                 }
 
                 DateTime date = date_descripton.Item1; // find replace??
-                string dayDescription = date_descripton.Item2; // find replace??
+                dayDescription = date_descripton.Item2; // find replace??
 
                 string format = "ddd, dd MMM yyyy";   // Use this format.
                 Console.WriteLine(date.ToString(format, culture)); // Write to console.
@@ -198,7 +199,7 @@ namespace AppGui
                 }
 
                 DateTime date = date_descripton.Item1; // find replace??
-                string dayDescription = date_descripton.Item2; // find replace??
+                dayDescription = date_descripton.Item2; // find replace??
 
                 string format = "ddd, dd MMM yyyy";   // Use this format.
                 Console.WriteLine(date.ToString(format, culture)); // Write to console.
@@ -249,10 +250,62 @@ namespace AppGui
                 Console.WriteLine("---------------------------------------------- " + meals[0].Vegetarian);
             }
 
+
+            // CONFIRMAR
+
+            else if (args[0].Equals("TYPE6"))
+            {
+                string canteen = args[2].Equals("Crasto") ? "Refeitório do Crasto" : "Refeitório de Santiago";
+
+                date_descripton = getValidDate_Description(args.Where((_, index) => index >= 3).ToArray<string>());
+
+                if (date_descripton == null)
+                {
+                    dManager.manageDialogueCanteenInvalidDate(date_descripton.Item1.Day, date_descripton.Item1.Month);
+                    return;
+                }
+
+                DateTime date = date_descripton.Item1; // find replace??
+                dayDescription = date_descripton.Item2; // find replace??
+
+                string format = "ddd, dd MMM yyyy";   // Use this format.
+                Console.WriteLine(date.ToString(format, culture)); // Write to console.
+
+                meals = (from r in document.Descendants("menu").Where
+                                    (r => r.Attribute("canteen").Value.Equals(canteen)).Where
+                                    (r => int.Parse(r.Attribute("weekdayNr").Value) == (int)date.DayOfWeek).Where
+                                    (r => r.Attribute("date").Value.Contains(date.ToString(format, culture)))
+                         from d in r.Elements("items")
+
+                         select new CanteenData
+                         {
+                             Canteen = r.Attribute("canteen").Value,
+                             Meal = r.Attribute("meal").Value,
+                             Date = r.Attribute("date").Value,
+                             Weekday = r.Attribute("weekday").Value,
+                             WeekdayNr = int.Parse(r.Attribute("weekdayNr").Value),
+                             Disabled = r.Attribute("disabled").Value,
+                             Meat = (d.IsEmpty || d.Descendants("item").ElementAt(1).IsEmpty) ? "" : d.Descendants("item").ElementAt(1).Value,
+                             Fish = (d.IsEmpty || d.Descendants("item").ElementAt(2).IsEmpty) ? "" : d.Descendants("item").ElementAt(2).Value,
+                             Diet = (d.IsEmpty || d.Descendants("item").ElementAt(3).IsEmpty) ? "" : d.Descendants("item").ElementAt(3).Value,
+                             Vegetarian = (d.IsEmpty || d.Descendants("item").ElementAt(4).IsEmpty) ? "" : d.Descendants("item").ElementAt(4).Value,
+                             Option = (d.IsEmpty || d.Descendants("item").ElementAt(5).IsEmpty) ? "" : d.Descendants("item").ElementAt(5).Value
+                         }).ToList<CanteenData>(); 
+
+                if (meals.Count > 0) meals[0].DayDescription = dayDescription;
+                else meals.Add(new CanteenData
+                {
+                    Disabled = "Encerrada", //vamos considerar encerrado
+                    Canteen = canteen,
+                    Meal = meal,
+                    DayDescription = "no dia " + date.Day + " do " + date.Month
+                });
+            }
+
             else if (args[0].Equals("TYPE3"))
             {
                 DateTime date = DateTime.Today;
-                string dayDescription = "hoje";
+                dayDescription = "hoje";
 
                 string format = "ddd, dd MMM yyyy";   // Use this format.
                 Console.WriteLine(date.ToString(format, culture)); // Write to console.
@@ -284,7 +337,7 @@ namespace AppGui
             else if (args[0].Equals("TYPE5"))
             {
                 DateTime date = DateTime.Today;
-                string dayDescription = "hoje";
+                dayDescription = "hoje";
 
                 string format = "ddd, dd MMM yyyy";   // Use this format.
                 Console.WriteLine(date.ToString(format, culture)); // Write to console.
@@ -311,9 +364,8 @@ namespace AppGui
                              DayDescription = dayDescription
                          }).ToList<CanteenData>();
 
-                dManager.displayCanteens(meals);
             }
-
+            dManager.displayCanteens(meals, dayDescription);
             dManager.manageDialogueCanteen(meals);
         }
 

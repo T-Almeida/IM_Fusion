@@ -175,11 +175,11 @@ namespace AppGui
             t.close();
         }
 
-        public void displayCanteens(List<CanteenData> meals)
+        public void displayCanteens(List<CanteenData> meals, string date)
         {
             window.Dispatcher.BeginInvoke((Action)(() =>
             {
-                CanteensPage page = new CanteensPage(meals);
+                CanteensPage page = new CanteensPage(meals, date);
                 window.NavigationService.Navigate(page);
             }));
         }
@@ -214,6 +214,16 @@ namespace AppGui
 
         }
 
+        private void displayError(string service, string message)
+        {
+            window.Dispatcher.BeginInvoke((Action)(() =>
+            {
+                ErrorPage page = new ErrorPage(service, message);
+                window.NavigationService.Navigate(page);
+            }));
+
+        }
+
 
         public void manageDialogueCanteen(List<CanteenData> canteens)
         {
@@ -243,6 +253,7 @@ namespace AppGui
         public void manageDialogueCanteenInvalidDate(int day, int month)
         {
             string phrase = answers.getCanteenMealsDayInvalid(day, month);
+            this.displayError("Ementas na cantina", phrase);
             t.Speak(phrase);
         }
 
@@ -458,6 +469,7 @@ namespace AppGui
         public void manageDialogueWeatherOutOfRangeDay(DateTime date, int days)
         {
             string phrase = answers.getWeatherDayOutOfRange(date, days);
+            this.displayError("Tempo em Aveiro", phrase);
             t.Speak(phrase);
             Console.WriteLine(phrase);
 
@@ -466,6 +478,7 @@ namespace AppGui
         public void manageDialogueWeatherInvalidDate(int day, int month)
         {
             string phrase = answers.getWeatherDayInvalid(day, month);
+            this.displayError("Tempo em Aveiro", phrase);
             t.Speak(phrase);
             Console.WriteLine(phrase);
 

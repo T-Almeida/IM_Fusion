@@ -130,7 +130,7 @@ namespace speechModality
                 else if (e.Result.Confidence > 0.30)
                 {
                     json.Append("\"confidence\":\"MEDIUM\",");
-                    json.Append("\"inputText\":\"" + e.Result.Text + "\",");
+                    json.Append("\"inputText\":\"" +  "\",");
                     switchYesNoGrammar(); //this method change grammars Enabled Method
                 }
                 else
@@ -138,8 +138,6 @@ namespace speechModality
                     json.Append("\"confidence\":\"BAD\",");
                 }
             }
-            
-
             
 
             //SEND
