@@ -4,40 +4,88 @@
 
 package scxmlgen.Modalities; 
 
+import genfusionscxml.GenFusionSCXML;
 import scxmlgen.interfaces.IModality; 
 
 public enum Speech implements IModality{  
+    
+    //days week
+    DAYSWEEK_DOMINGO("[dayOfWeek][domingo][0]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_SEGUNDA("[dayOfWeek][segunda][1]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_TERCA("[dayOfWeek][terça][2]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_QUARTA("[dayOfWeek][quarta][3]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_QUINTA("[dayOfWeek][quinta][4]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_SEXTA("[dayOfWeek][sexta][5]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_SABADO("[dayOfWeek][sábado][6]",GenFusionSCXML.TIMEOUT),
+    
+    //days relative
+    DAYSREL_TODAY("[today][today][]",GenFusionSCXML.TIMEOUT),
+    DAYSREL_TOMORROW("[tomorrow][tomorrow][]",GenFusionSCXML.TIMEOUT),
+    
+    //days number
+    DAYSNUMBER_1("[numberOfDay][1][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_2("[numberOfDay][2][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_3("[numberOfDay][3][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_4("[numberOfDay][4][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_5("[numberOfDay][5][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_6("[numberOfDay][6][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_7("[numberOfDay][7][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_8("[numberOfDay][8][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_9("[numberOfDay][9][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_10("[numberOfDay][10][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_11("[numberOfDay][11][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_12("[numberOfDay][12][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_13("[numberOfDay][13][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_14("[numberOfDay][14][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_15("[numberOfDay][15][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_16("[numberOfDay][16][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_17("[numberOfDay][17][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_18("[numberOfDay][18][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_19("[numberOfDay][19][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_20("[numberOfDay][20][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_21("[numberOfDay][21][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_22("[numberOfDay][22][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_23("[numberOfDay][23][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_24("[numberOfDay][24][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_25("[numberOfDay][25][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_26("[numberOfDay][26][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_27("[numberOfDay][27][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_28("[numberOfDay][28][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_29("[numberOfDay][29][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_30("[numberOfDay][30][]",GenFusionSCXML.TIMEOUT),
+    DAYSNUMBER_31("[numberOfDay][31][]",GenFusionSCXML.TIMEOUT),
+    
+    //parques
+    PARQUE_BIBLIOTECA("[Biblioteca]",GenFusionSCXML.TIMEOUT),
+    PARQUE_RESIDENCIAS("[Residencias]",GenFusionSCXML.TIMEOUT),
+    PARQUE_SUBTERRANEO("[Subterraneo]",GenFusionSCXML.TIMEOUT),
+    PARQUE_CERAMICA("[Ceramica]",GenFusionSCXML.TIMEOUT),
+    PARQUE_LINGUAS("[Linguas]",GenFusionSCXML.TIMEOUT),
+    PARQUE_INCUBADORA("[Incubadora]",GenFusionSCXML.TIMEOUT),
+    PARQUE_ISCAAPUBLICO("[ISCAA]",GenFusionSCXML.TIMEOUT),
+    
+    
+    
+    ;
 
-        DAYS_DOMINGO("[dayOfWeek][domingo][0]",1500),
-        DAYS_SEGUNDA("[dayOfWeek][segunda][1]",1500),
-        DAYS_TERCA("[dayOfWeek][terça][2]",1500),
-        DAYS_QUARTA("[dayOfWeek][quarta][3]",1500),
-        DAYS_QUINTA("[dayOfWeek][quinta][4]",1500),
-        DAYS_SEXTA("[dayOfWeek][sexta][5]",1500),
-        DAYS_SABADO("[dayOfWeek][sábado][6]",1500),
-	PARQUES_LUGARES_LINGUAS("[SAS][TYPE2][SUBTYPE3][Linguas]",1500),
-        TRIANGLE("[shape][TRIANGLE]",1500),
-        CIRCLE("[shape][CIRCLE]",1500),
-        CIRCLE_RED("[shape][CIRCLE][color][RED]",1500);
-
-
-private String event; 
-private int timeout;
-Speech(String m, int time) {
-	event=m;
-	timeout=time;
-}
-@Override
-public int getTimeOut(){
-	return timeout;
-}
-@Override
-public String getEventName(){
-	return event;
-}
-@Override
-public String getEvName(){
-	return getModalityName().toLowerCase() +event.toLowerCase();
-}
+ 
+    private String event; 
+    private int timeout;
+    Speech(String m, int time) {
+            event=m;
+            timeout=time;
+    }
+    @Override
+    public int getTimeOut(){
+            return timeout;
+    }
+    @Override
+    public String getEventName(){
+            return event;
+    }
+    @Override
+    public String getEvName(){
+            return getModalityName().toLowerCase() +event.toLowerCase();
+    }
 
 }

@@ -29,6 +29,7 @@ namespace AppGui
 
         private static int i = 0;
 
+        private List<Tuple<string, string>> specialCharacters;
 
         private void greathingsCallback()
         {
@@ -37,6 +38,13 @@ namespace AppGui
 
         public ModalitiesManager(MainWindow window)
         {
+
+            specialCharacters = new List<Tuple<string, string>>();
+            specialCharacters.Add(new Tuple<string, string>("é", "<e>"));
+            specialCharacters.Add(new Tuple<string, string>("ê", "<e_acent>"));
+            specialCharacters.Add(new Tuple<string, string>("í", "<i>"));
+            specialCharacters.Add(new Tuple<string, string>("ã", "<a_till>"));
+
             canteen = new ClientCanteen(this);
             parking = new ClientSAS(this);
             tickets = new ClientSAC(this);
@@ -61,7 +69,13 @@ namespace AppGui
                         break;
                     case "MEDIUM":
                         lastCommand = json.recognized;
+
                         lastCommandInputText = (string)json.inputText.ToString();
+                        foreach (var t in specialCharacters)
+                        {
+                            lastCommandInputText = lastCommandInputText.Replace(t.Item2, t.Item1);
+                        }
+
                         //dizer que nao percebeu
                         t.Speak(answers.getNormalConfidenceTypeNormal(lastCommandInputText), false);
                         break;
@@ -77,6 +91,7 @@ namespace AppGui
                     case "GOOD":
                         if (((string)json.recognized[0].ToString()).Equals("YES"))
                         {
+                            Console.WriteLine("Execute " + lastCommand);
                             handleRecognized(lastCommand);
                         }
                         else
@@ -431,7 +446,7 @@ namespace AppGui
                         }
 
                         Console.WriteLine("UPDATE GRAMMAR");
-                        //t.addNewsToGrammar(lNews);
+                        t.addNewsToGrammar(lNews);
 
                         break;
                     case "TYPE2":

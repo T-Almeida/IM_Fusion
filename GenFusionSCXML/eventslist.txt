@@ -1,7 +1,0 @@
-[color][RED]
-[shape][TRIANGLE]
-[dayOfWeek][domingo][0]
-[color][YELLOW]
-[shape][SQUARE]
-[shape][CIRCLE]
-[color][BLUE]

@@ -33,6 +33,10 @@ root="rootRule">
         <tag>out.weekDayNumber=rules.weatherDays.weekdayNumber;</tag>
       </item>
       <item>
+        <ruleref uri="#sasParkLoc"/>
+        <tag>out.sasParkLoc=rules.latest();</tag>
+      </item>
+      <item>
         <ruleref uri="#help"/>
       </item>
       <item>
@@ -372,25 +376,25 @@ root="rootRule">
 	<rule id="sasParkLoc">
 		<one-of>
 			<item>
-				da Biblioteca<tag>out="Biblioteca"</tag>
+        <item repeat="0-1">da</item> Biblioteca<tag>out="Biblioteca"</tag>
 			</item>
 			<item>
-				da Residência<tag>out="Residencias"</tag>
+				<item repeat="0-1">da</item> Residência<tag>out="Residencias"</tag>
 			</item>
 			<item>
 				Subterrâneo<tag>out="Subterraneo"</tag>
 			</item>
 			<item>
-				de Cerâmica<tag>out="Ceramica"</tag>
+				<item repeat="0-1">de</item> Cerâmica<tag>out="Ceramica"</tag>
 			</item>
 			<item>
-				de Línguas<tag>out="Linguas"</tag>
+				<item repeat="0-1">de</item> Línguas<tag>out="Linguas"</tag>
 			</item>
 			<item>
-				da Incubadora<tag>out="Incubadora"</tag>
+				<item repeat="0-1">da</item> Incubadora<tag>out="Incubadora"</tag>
 			</item>
 			<item>
-				do Isca<tag>out="ISCAA Publico"</tag>
+				<item repeat="0-1">do</item> Isca<tag>out="ISCAA"</tag>
 			</item>
 		</one-of>
 	</rule>

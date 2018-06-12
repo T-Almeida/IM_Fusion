@@ -35,7 +35,13 @@ namespace GestureModality
             this.window = window;
         }
 
-       
+        private void resetWindow() {
+            isSpeakRunning = false;
+            window.Dispatcher.BeginInvoke((Action)(() =>
+            {
+                window.resetDefaultColor();
+            }));
+        }
 
         public void run()
         {
@@ -59,6 +65,7 @@ namespace GestureModality
                         {
                             case "<START>":
                                 isSpeakRunning = true;
+                                //Task.Delay(1500).ContinueWith(t => resetWindow());
 
                                 break;
                             case "<FIRST_START>":
@@ -70,11 +77,7 @@ namespace GestureModality
                                 }));
                                 break;
                             case "<STOP>":
-                                isSpeakRunning = false;
-                                window.Dispatcher.BeginInvoke((Action)(() =>
-                                {
-                                    window.resetDefaultColor();
-                                }));
+                                resetWindow();
                                 break;
 
                             case null:

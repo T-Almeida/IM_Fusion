@@ -105,6 +105,11 @@ namespace AppGui
             guestureClient.close();
         }
 
+        public void addNewsToGrammar(List<string> news)
+        {
+            guestureClient.sendDynamicNews(news);
+        }
+
         /*
          * Speak
          * 
