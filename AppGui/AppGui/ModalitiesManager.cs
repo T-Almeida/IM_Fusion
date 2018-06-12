@@ -163,6 +163,17 @@ namespace AppGui
             {
                 NewsPage page = new NewsPage(newsList);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
+            }));
+        }
+
+        public void displayNewsDetails(NewsData news)
+        {
+            window.Dispatcher.BeginInvoke((Action)(() =>
+            {
+                NewsDetailsPage page = new NewsDetailsPage(news);
+                window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
         }
 
@@ -172,6 +183,7 @@ namespace AppGui
             {
                 ServiceNotAvailable page = new ServiceNotAvailable(service);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
         }
 
@@ -181,6 +193,7 @@ namespace AppGui
             {
                 WeatherPage page = new WeatherPage(weather);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
         }
 
@@ -196,6 +209,7 @@ namespace AppGui
             {
                 CanteensPage page = new CanteensPage(meals, date);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
         }
 
@@ -205,6 +219,7 @@ namespace AppGui
             {
                 ParksPage page = new ParksPage(parks);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
 
         }
@@ -215,6 +230,7 @@ namespace AppGui
             {
                 TicketsPage page = new TicketsPage(tickets);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
 
         }
@@ -235,6 +251,7 @@ namespace AppGui
             {
                 ErrorPage page = new ErrorPage(service, message);
                 window.NavigationService.Navigate(page);
+                window.isInHelpPage = false;
             }));
 
         }
@@ -438,6 +455,7 @@ namespace AppGui
                 {
                     case "TYPE1":
                         phrase = answers.getAllNews(news);
+                        displayNews(news);
 
                         List<string> lNews = new List<string>();
                         foreach (NewsData nD in news)
@@ -447,17 +465,16 @@ namespace AppGui
 
                         Console.WriteLine("UPDATE GRAMMAR");
                         t.addNewsToGrammar(lNews);
-
                         break;
                     case "TYPE2":
                         phrase = answers.getNewsDescription(news[int.Parse(args[1])]);
+                        displayNewsDetails(news[int.Parse(args[1])]);
                         break;
                     case "TYPE3":
                         phrase = answers.getHelpNews(true);
                         break;
                 }
             }
-
 
             t.Speak(phrase);
             Console.WriteLine(phrase);

@@ -28,13 +28,14 @@ namespace AppGui
 
         private bool speakFinish;
 
+        public bool isInHelpPage;
+
         public MainWindow()
         {
             InitializeComponent();
 
             PresentationPage initialPage = new PresentationPage(this);
             this.Content = initialPage;
-            Task.Factory.StartNew(() => initialPage.startSlideShow());
 
             speakFinish = true;
 

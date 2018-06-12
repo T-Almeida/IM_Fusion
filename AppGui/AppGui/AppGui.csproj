@@ -107,6 +107,9 @@
     <Compile Include="Pages\Help\WeatherHelp.xaml.cs">
       <DependentUpon>WeatherHelp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NewsDetailsPage.xaml.cs">
+      <DependentUpon>NewsDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
@@ -171,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Help\WeatherHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NewsDetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

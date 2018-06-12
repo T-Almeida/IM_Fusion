@@ -36,17 +36,29 @@ namespace AppGui.Pages
             pages.Add(new TicketsHelp());
             pages.Add(new WeatherHelp());
             pages.Add(new NewsHelp());
+            window.isInHelpPage = true;
+            Task.Factory.StartNew(() => startSlideShow());
         }
 
         public void startSlideShow()
         {
             for (int i = 0; ; i++)
             {
-                window.Dispatcher.BeginInvoke((Action)(() =>
+                if (window.isInHelpPage)
                 {
-                    window.NavigationService.Navigate(pages.ElementAt(i % pages.Count));
-                }));
-                Thread.Sleep(5000);
+
+                    window.Dispatcher.BeginInvoke((Action)(() =>
+                    {
+                        window.NavigationService.Navigate(pages.ElementAt(i % pages.Count));
+                    }));
+
+                    Thread.Sleep(5000);
+                }
+
+                else
+                {
+                    break;
+                }
             }
         }
     }
