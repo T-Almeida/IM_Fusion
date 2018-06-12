@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using MahApps.Metro.Controls;
 using System.Windows.Controls;
 using AppGui.Pages;
+using System.Threading.Tasks;
 
 namespace AppGui
 {
@@ -30,6 +31,10 @@ namespace AppGui
         public MainWindow()
         {
             InitializeComponent();
+
+            PresentationPage initialPage = new PresentationPage(this);
+            this.Content = initialPage;
+            Task.Factory.StartNew(() => initialPage.startSlideShow());
 
             speakFinish = true;
 

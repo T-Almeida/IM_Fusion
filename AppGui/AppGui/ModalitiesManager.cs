@@ -223,7 +223,7 @@ namespace AppGui
         {
             window.Dispatcher.BeginInvoke((Action)(() =>
             {
-                PresentationPage page = new PresentationPage();
+                PresentationPage page = new PresentationPage(window);
                 window.NavigationService.Navigate(page);
             }));
 
