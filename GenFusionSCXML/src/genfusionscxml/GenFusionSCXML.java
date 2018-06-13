@@ -41,31 +41,33 @@ public class GenFusionSCXML {
         //Days_week_domingo
 
         for (Speech sp: Speech.values()){
-            if (sp.toString().contains("DAYS")){ //dias combinam com weather
+            if (sp.toString().startsWith("DAYS")){ //dias combinam com weather
                 System.out.println(sp.toString()+" "+Output.valueOf("WEATHER_"+sp.toString()));
                 fg.Complementary(sp, Guestures.WEATHER, Output.valueOf("WEATHER_"+sp.toString()));
-            }else if(sp.toString().contains("PARQUE")){
+                System.out.println(sp.toString()+" "+Output.valueOf("CANTEENS_"+sp.toString()));
+                fg.Complementary(sp, Guestures.CANTEENS, Output.valueOf("CANTEENS_"+sp.toString()));
+            }else if(sp.toString().startsWith("PARQUE")){
                 System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
                 fg.Complementary(sp, Guestures.PARQUES, Output.valueOf(sp.toString()));
+            }else if(sp.toString().startsWith("CANTEENS")){
+                System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
+                fg.Complementary(sp, Guestures.CANTEENS, Output.valueOf(sp.toString()));
+            }else if(sp.toString().startsWith("SENHAS")){
+                System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
+                fg.Complementary(sp, Guestures.SENHAS, Output.valueOf(sp.toString()));
             }
         }
 
-
-
-
-
-        //fg.Single(Speech.PARQUES_LUGARES_LINGUAS, Output.PARQUES_LUGARES_LINGUAS);
-        //fg.Single(Speech.PARQUES_LUGARES_BIBLIOTECA, Output.PARQUES_LUGARES_BIBLIOTECA);
-
-        //fg.Single(Speech.DAYS_DOMINGO, Output.TRIANGLE_BLUE);  //EXAMPLE
-
-        //
-
         //fg.Redundancy(Speech.CIRCLE_RED, SecondMod., Output.CIRCLE);  //EXAMPLE
-
+        
+        
+       
         //deixar passar
         fg.Single(Guestures.WEATHER, Output.WEATHER_DAYSREL_TOMORROW); 
-        fg.Single(Guestures.PARQUES, Output.PARQUE_GERAL); 
+        fg.Single(Guestures.PARQUES, Output.PARQUE_GERAL);
+        fg.Single(Guestures.CANTEENS, Output.CANTEENS_DAYSREL_TODAY);
+        fg.Single(Guestures.SENHAS, Output.SENHAS_GERAL);
+        
         
         fg.Build("fusion.scxml");
         

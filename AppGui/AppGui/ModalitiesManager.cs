@@ -40,10 +40,17 @@ namespace AppGui
         {
 
             specialCharacters = new List<Tuple<string, string>>();
-            specialCharacters.Add(new Tuple<string, string>("é", "<e>"));
-            specialCharacters.Add(new Tuple<string, string>("ê", "<e_acent>"));
-            specialCharacters.Add(new Tuple<string, string>("í", "<i>"));
-            specialCharacters.Add(new Tuple<string, string>("ã", "<a_till>"));
+            specialCharacters.Add(new Tuple<string, string>("é", "(e)"));
+            specialCharacters.Add(new Tuple<string, string>("ê", "(e_acent)"));
+            specialCharacters.Add(new Tuple<string, string>("í", "(i)"));
+            specialCharacters.Add(new Tuple<string, string>("ç", "(c)"));
+            specialCharacters.Add(new Tuple<string, string>("ã", "(a_till)"));
+            specialCharacters.Add(new Tuple<string, string>("à", "(a_haver)"));
+            specialCharacters.Add(new Tuple<string, string>("á", "(a_acent)"));
+            specialCharacters.Add(new Tuple<string, string>("â", "(a_cir)"));
+            specialCharacters.Add(new Tuple<string, string>("õ", "(o_till)"));
+            specialCharacters.Add(new Tuple<string, string>("ó", "(o_acent)"));
+            specialCharacters.Add(new Tuple<string, string>(" ", "(_)"));
 
             canteen = new ClientCanteen(this);
             parking = new ClientSAS(this);
@@ -58,6 +65,12 @@ namespace AppGui
 
         public void handleIMcommand(string command)
         {
+            
+            foreach (var t in specialCharacters)
+            {
+                command = command.Replace(t.Item2, t.Item1);
+            }
+
             dynamic json = JsonConvert.DeserializeObject(command);
             if (((string)json.type.ToString()).Equals("NORMAL"))
             {

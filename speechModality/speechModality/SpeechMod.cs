@@ -38,10 +38,16 @@ namespace speechModality
 
 
             specialCharacters = new List<Tuple<string, string>>();
-            specialCharacters.Add(new Tuple<string, string>("é","<e>"));
-            specialCharacters.Add(new Tuple<string, string>("ê", "<e_acent>"));
-            specialCharacters.Add(new Tuple<string, string>("í", "<i>"));
-            specialCharacters.Add(new Tuple<string, string>("ã", "<a_till>"));
+            specialCharacters.Add(new Tuple<string, string>("é", "(e)"));
+            specialCharacters.Add(new Tuple<string, string>("ê", "(e_acent)"));
+            specialCharacters.Add(new Tuple<string, string>("í", "(i)"));
+            specialCharacters.Add(new Tuple<string, string>("ç", "(c)"));
+            specialCharacters.Add(new Tuple<string, string>("ã", "(a_till)"));
+            specialCharacters.Add(new Tuple<string, string>("à", "(a_haver)"));
+            specialCharacters.Add(new Tuple<string, string>("á", "(a_acent)"));
+            specialCharacters.Add(new Tuple<string, string>("â", "(a_cir)"));
+            specialCharacters.Add(new Tuple<string, string>("õ", "(o_till)"));
+            specialCharacters.Add(new Tuple<string, string>("ó", "(o_acent)"));
 
 
             Console.WriteLine("OK...");
@@ -159,7 +165,15 @@ namespace speechModality
             json.Append("\"recognized\": [");
             foreach (var resultSemantic in e.Result.Semantics)
             {
-                json.Append("\"" + resultSemantic.Value.Value + "\",");
+                //handle special characters
+                
+                string rSemantic = (string)resultSemantic.Value.Value;
+                foreach (var t in specialCharacters)
+                {
+                    rSemantic = rSemantic.Replace(t.Item1, t.Item2);
+                }
+
+                json.Append("\"" + rSemantic + "\",");
             }
             json.Remove(json.Length-1,1);
             
