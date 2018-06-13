@@ -7,6 +7,6 @@
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         ShowsNavigationUI="False"
-        Title="APP GUI"  Height="500" Width="800" Source="Pages\PresentationPage.xaml">
+        Title="APP GUI"  Height="500" Width="800">
     
 </NavigationWindow>

@@ -83,7 +83,6 @@ namespace AppGui
             }
 
             dManager.manageDialogueNews(newsList, args);
-            dManager.displayNews(newsList);
         }
     }
 }

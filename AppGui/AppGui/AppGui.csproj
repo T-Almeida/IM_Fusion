@@ -92,6 +92,24 @@
     <Compile Include="Pages\ErrorPage.xaml.cs">
       <DependentUpon>ErrorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Help\CanteensHelp.xaml.cs">
+      <DependentUpon>CanteensHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\NewsHelp.xaml.cs">
+      <DependentUpon>NewsHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\ParksHelp.xaml.cs">
+      <DependentUpon>ParksHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\TicketsHelp.xaml.cs">
+      <DependentUpon>TicketsHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Help\WeatherHelp.xaml.cs">
+      <DependentUpon>WeatherHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewsDetailsPage.xaml.cs">
+      <DependentUpon>NewsDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
@@ -136,6 +154,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\ErrorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Help\CanteensHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Help\NewsHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Help\ParksHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Help\TicketsHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Help\WeatherHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NewsDetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

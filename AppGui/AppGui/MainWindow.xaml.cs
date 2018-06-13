@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using MahApps.Metro.Controls;
 using System.Windows.Controls;
 using AppGui.Pages;
+using System.Threading.Tasks;
 
 namespace AppGui
 {
@@ -27,9 +28,14 @@ namespace AppGui
 
         private bool speakFinish;
 
+        public bool isInHelpPage;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            PresentationPage initialPage = new PresentationPage(this);
+            this.Content = initialPage;
 
             speakFinish = true;
 
