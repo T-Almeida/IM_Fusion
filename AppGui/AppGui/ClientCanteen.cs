@@ -253,7 +253,7 @@ namespace AppGui
             else if (args[0].Equals("TYPE6"))
             {
 
-                if (args[0].Equals("SUBTYPE1"))
+                if (args[1].Equals("SUBTYPE1"))
                 {
                     string canteen = args[2].Equals("Crasto") ? "Refeitório do Crasto" : "Refeitório de Santiago";
 
