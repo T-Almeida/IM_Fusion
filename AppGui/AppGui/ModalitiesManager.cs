@@ -167,8 +167,14 @@ namespace AppGui
                     Console.WriteLine("REPEAT");
                     manageDialogueRepeat();
                     break;
+
+                case "NOTRECOGNIZE":
+                    Console.WriteLine("NOTRECOGNIZE");
+                    manageDialogueNotRecognize();
+                    break;
             }
         }
+
 
         public void displayNews(List<NewsData> newsList)
         {
@@ -545,6 +551,10 @@ namespace AppGui
             t.SpeakRepeat();
         }
 
+        private void manageDialogueNotRecognize()
+        {
+            t.Speak("Desculpa, mas essa frase não faz sentido");
+        }
 
         public void manageDialogueWeatherConnectionErrors(string error, string description)
         {

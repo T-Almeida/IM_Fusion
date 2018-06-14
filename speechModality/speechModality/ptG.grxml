@@ -84,7 +84,8 @@ root="rootRule">
     <example> Type2 - Informação sobre uma cantina</example>
     <example> Type3 - (tenho fome) Informação sobre uma cantina para hoje</example>
     <example> Type4 - Ajuda com as cantinas</example>
-    <example> Type5 - Para fusao cantinas + hora</example>
+    <example> Type5 - 2 cantinas </example>
+    <example> Type6 - Para fusao cantinas + hora</example>
     <tag>out.api="CANTEENS";</tag>
     <one-of>
       <item>
@@ -178,7 +179,7 @@ root="rootRule">
         <item>com as cantinas</item>
       </item>
       <item>
-        <tag>out.canteensType="TYPE5";</tag>
+        <tag>out.canteensType="TYPE6";</tag>
         <one-of>
           <item>
             <item>

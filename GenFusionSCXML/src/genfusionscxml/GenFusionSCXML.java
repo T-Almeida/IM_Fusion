@@ -44,17 +44,26 @@ public class GenFusionSCXML {
             if (sp.toString().startsWith("DAYS")){ //dias combinam com weather
                 System.out.println(sp.toString()+" "+Output.valueOf("WEATHER_"+sp.toString()));
                 fg.Complementary(sp, Guestures.WEATHER, Output.valueOf("WEATHER_"+sp.toString()));
+                
                 System.out.println(sp.toString()+" "+Output.valueOf("CANTEENS_"+sp.toString()));
                 fg.Complementary(sp, Guestures.CANTEENS, Output.valueOf("CANTEENS_"+sp.toString()));
+                
+                //fg.Single(sp, Output.GERAL_PASS_DONT_RECOGNIZE);
             }else if(sp.toString().startsWith("PARQUE")){
                 System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
                 fg.Complementary(sp, Guestures.PARQUES, Output.valueOf(sp.toString()));
+                
+                //fg.Single(sp, Output.GERAL_PASS_DONT_RECOGNIZE);
             }else if(sp.toString().startsWith("CANTEENS")){
                 System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
                 fg.Complementary(sp, Guestures.CANTEENS, Output.valueOf(sp.toString()));
+                
+                //fg.Single(sp, Output.GERAL_PASS_DONT_RECOGNIZE);
             }else if(sp.toString().startsWith("SENHAS")){
                 System.out.println(sp.toString()+" "+Output.valueOf(sp.toString()));
                 fg.Complementary(sp, Guestures.SENHAS, Output.valueOf(sp.toString()));
+                
+                //fg.Single(sp, Output.GERAL_PASS_DONT_RECOGNIZE);
             }
         }
 
