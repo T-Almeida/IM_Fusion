@@ -250,7 +250,7 @@ namespace AppGui
                 Console.WriteLine("---------------------------------------------- " + meals[0].Vegetarian);
             }
 
-            else if (args[0].Equals("TYPE6"))
+            else if (args[0].Equals("TYPE7"))
             {
 
                 if (args[1].Equals("SUBTYPE1"))

@@ -175,6 +175,10 @@ namespace AppGui
             }
         }
 
+        private void manageDialogueNotRecognize()
+        {
+            t.Speak("Desculpa, mas essa frase não faz sentido");
+        }
 
         public void displayNews(List<NewsData> newsList)
         {
