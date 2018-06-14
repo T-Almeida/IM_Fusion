@@ -194,7 +194,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][sábado][6]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][sábado][6]')}" />
       <send event="CANTEENS_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -225,7 +225,7 @@
     <onentry>
       <log label="[sspeech[tomorrow][tomorrow][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][tomorrow][tomorrow][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][tomorrow][tomorrow][]')}" />
       <send event="CANTEENS_DAYSREL_TOMORROW" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -555,7 +555,7 @@
   <state id="guestures[canteens][type5]-final">
     <onentry>
       <log label="[guestures[canteens][type5]-final]" expr="READY" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[CANTEENS][TYPE5][SUBTYPE3][today][today][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[CANTEENS][TYPE5][SUBTYPE2][today][today][]')}" />
       <send event="CANTEENS_DAYSREL_TODAY" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -564,7 +564,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][domingo][0]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][domingo][0]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][domingo][0]')}" />
       <send event="CANTEENS_DAYSWEEK_DOMINGO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -573,7 +573,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][segunda][1]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][segunda][1]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][segunda][1]')}" />
       <send event="CANTEENS_DAYSWEEK_SEGUNDA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -582,7 +582,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][terça][2]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][terça][2]')}" />
       <send event="CANTEENS_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -591,7 +591,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][quarta][3]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][quarta][3]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][quarta][3]')}" />
       <send event="CANTEENS_DAYSWEEK_QUARTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -600,7 +600,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][quinta][4]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][quinta][4]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][quinta][4]')}" />
       <send event="CANTEENS_DAYSWEEK_QUINTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -609,7 +609,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][sexta][5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][sexta][5]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][sexta][5]')}" />
       <send event="CANTEENS_DAYSWEEK_SEXTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -618,7 +618,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[dayofweek][sábado][6]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][sábado][6]')}" />
       <send event="CANTEENS_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -627,7 +627,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[today][today][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][today][today][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][today][today][]')}" />
       <send event="CANTEENS_DAYSREL_TODAY" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -636,7 +636,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[tomorrow][tomorrow][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][tomorrow][tomorrow][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][tomorrow][tomorrow][]')}" />
       <send event="CANTEENS_DAYSREL_TOMORROW" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -645,7 +645,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][1][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][1][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][1][]')}" />
       <send event="CANTEENS_DAYSNUMBER_1" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -654,7 +654,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][2][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][2][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][2][]')}" />
       <send event="CANTEENS_DAYSNUMBER_2" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -663,7 +663,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][3][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][3][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][3][]')}" />
       <send event="CANTEENS_DAYSNUMBER_3" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -672,7 +672,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][4][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][4][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][4][]')}" />
       <send event="CANTEENS_DAYSNUMBER_4" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -681,7 +681,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][5][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][5][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][5][]')}" />
       <send event="CANTEENS_DAYSNUMBER_5" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -690,7 +690,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][6][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][6][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][6][]')}" />
       <send event="CANTEENS_DAYSNUMBER_6" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -699,7 +699,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][7][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][7][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][7][]')}" />
       <send event="CANTEENS_DAYSNUMBER_7" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -708,7 +708,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][8][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][8][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][8][]')}" />
       <send event="CANTEENS_DAYSNUMBER_8" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -717,7 +717,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][9][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][9][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][9][]')}" />
       <send event="CANTEENS_DAYSNUMBER_9" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -726,7 +726,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][10][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][10][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][10][]')}" />
       <send event="CANTEENS_DAYSNUMBER_10" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -735,7 +735,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][11][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][11][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][11][]')}" />
       <send event="CANTEENS_DAYSNUMBER_11" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -744,7 +744,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][12][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][12][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][12][]')}" />
       <send event="CANTEENS_DAYSNUMBER_12" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -753,7 +753,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][13][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][13][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][13][]')}" />
       <send event="CANTEENS_DAYSNUMBER_13" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -762,7 +762,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][14][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][14][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][14][]')}" />
       <send event="CANTEENS_DAYSNUMBER_14" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -771,7 +771,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][15][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][15][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][15][]')}" />
       <send event="CANTEENS_DAYSNUMBER_15" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -780,7 +780,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][16][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][16][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][16][]')}" />
       <send event="CANTEENS_DAYSNUMBER_16" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -789,7 +789,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][17][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][17][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][17][]')}" />
       <send event="CANTEENS_DAYSNUMBER_17" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -798,7 +798,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][18][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][18][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][18][]')}" />
       <send event="CANTEENS_DAYSNUMBER_18" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -807,7 +807,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][19][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][19][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][19][]')}" />
       <send event="CANTEENS_DAYSNUMBER_19" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -816,7 +816,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][20][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][20][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][20][]')}" />
       <send event="CANTEENS_DAYSNUMBER_20" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -825,7 +825,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][21][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][21][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][21][]')}" />
       <send event="CANTEENS_DAYSNUMBER_21" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -834,7 +834,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][22][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][22][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][22][]')}" />
       <send event="CANTEENS_DAYSNUMBER_22" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -843,7 +843,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][23][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][23][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][23][]')}" />
       <send event="CANTEENS_DAYSNUMBER_23" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -852,7 +852,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][24][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][24][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][24][]')}" />
       <send event="CANTEENS_DAYSNUMBER_24" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -861,7 +861,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][25][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][25][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][25][]')}" />
       <send event="CANTEENS_DAYSNUMBER_25" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -870,7 +870,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][26][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][26][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][26][]')}" />
       <send event="CANTEENS_DAYSNUMBER_26" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -879,7 +879,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][27][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][27][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][27][]')}" />
       <send event="CANTEENS_DAYSNUMBER_27" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -888,7 +888,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][28][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][28][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][28][]')}" />
       <send event="CANTEENS_DAYSNUMBER_28" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -897,7 +897,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][29][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][29][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][29][]')}" />
       <send event="CANTEENS_DAYSNUMBER_29" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -906,7 +906,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][30][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][30][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][30][]')}" />
       <send event="CANTEENS_DAYSNUMBER_30" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -915,7 +915,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[numberofday][31][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][31][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][31][]')}" />
       <send event="CANTEENS_DAYSNUMBER_31" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -924,7 +924,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[canteens][type5][crasto]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][Crasto][SUBTYPE2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE1][Crasto][today][today][]')}" />
       <send event="CANTEENS_CRASTO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -933,7 +933,7 @@
     <onentry>
       <log label="[sguestures[canteens][type5]-speech[canteens][type5][santiago]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][Santiago][SUBTYPE2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE1][Santiago][today][today][]')}" />
       <send event="CANTEENS_SANTIAGO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1831,7 +1831,7 @@
     <onentry>
       <log label="[sspeech[numberofday][13][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][13][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][13][]')}" />
       <send event="CANTEENS_DAYSNUMBER_13" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1925,7 +1925,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][sexta][5]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][sexta][5]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][sexta][5]')}" />
       <send event="CANTEENS_DAYSWEEK_SEXTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1977,7 +1977,7 @@
     <onentry>
       <log label="[sspeech[today][today][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][today][today][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][today][today][]')}" />
       <send event="CANTEENS_DAYSREL_TODAY" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2008,7 +2008,7 @@
     <onentry>
       <log label="[sspeech[numberofday][22][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][22][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][22][]')}" />
       <send event="CANTEENS_DAYSNUMBER_22" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2186,7 +2186,7 @@
     <onentry>
       <log label="[sspeech[numberofday][2][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][2][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][2][]')}" />
       <send event="CANTEENS_DAYSNUMBER_2" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2364,7 +2364,7 @@
     <onentry>
       <log label="[sspeech[numberofday][4][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][4][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][4][]')}" />
       <send event="CANTEENS_DAYSNUMBER_4" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2437,7 +2437,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][segunda][1]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][segunda][1]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][segunda][1]')}" />
       <send event="CANTEENS_DAYSWEEK_SEGUNDA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2468,7 +2468,7 @@
     <onentry>
       <log label="[sspeech[numberofday][20][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][20][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][20][]')}" />
       <send event="CANTEENS_DAYSNUMBER_20" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2520,7 +2520,7 @@
     <onentry>
       <log label="[sspeech[numberofday][23][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][23][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][23][]')}" />
       <send event="CANTEENS_DAYSNUMBER_23" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2970,7 +2970,7 @@
     <onentry>
       <log label="[sspeech[numberofday][18][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][18][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][18][]')}" />
       <send event="CANTEENS_DAYSNUMBER_18" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3127,7 +3127,7 @@
     <onentry>
       <log label="[sspeech[numberofday][29][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][29][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][29][]')}" />
       <send event="CANTEENS_DAYSNUMBER_29" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3158,7 +3158,7 @@
     <onentry>
       <log label="[sspeech[numberofday][27][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][27][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][27][]')}" />
       <send event="CANTEENS_DAYSNUMBER_27" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3210,7 +3210,7 @@
     <onentry>
       <log label="[sspeech[numberofday][17][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][17][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][17][]')}" />
       <send event="CANTEENS_DAYSNUMBER_17" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3283,7 +3283,7 @@
     <onentry>
       <log label="[sspeech[numberofday][30][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][30][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][30][]')}" />
       <send event="CANTEENS_DAYSNUMBER_30" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3335,7 +3335,7 @@
     <onentry>
       <log label="[sspeech[numberofday][5][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][5][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][5][]')}" />
       <send event="CANTEENS_DAYSNUMBER_5" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3387,7 +3387,7 @@
     <onentry>
       <log label="[sspeech[numberofday][14][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][14][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][14][]')}" />
       <send event="CANTEENS_DAYSNUMBER_14" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3418,7 +3418,7 @@
     <onentry>
       <log label="[sspeech[numberofday][10][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][10][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][10][]')}" />
       <send event="CANTEENS_DAYSNUMBER_10" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3449,7 +3449,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][domingo][0]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][domingo][0]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][domingo][0]')}" />
       <send event="CANTEENS_DAYSWEEK_DOMINGO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3522,7 +3522,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][terça][2]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][terça][2]')}" />
       <send event="CANTEENS_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3679,7 +3679,7 @@
     <onentry>
       <log label="[sspeech[numberofday][1][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][1][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][1][]')}" />
       <send event="CANTEENS_DAYSNUMBER_1" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3752,7 +3752,7 @@
     <onentry>
       <log label="[sspeech[numberofday][25][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][25][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][25][]')}" />
       <send event="CANTEENS_DAYSNUMBER_25" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3888,7 +3888,7 @@
     <onentry>
       <log label="[sspeech[numberofday][19][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][19][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][19][]')}" />
       <send event="CANTEENS_DAYSNUMBER_19" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3940,7 +3940,7 @@
     <onentry>
       <log label="[sspeech[numberofday][28][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][28][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][28][]')}" />
       <send event="CANTEENS_DAYSNUMBER_28" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4013,7 +4013,7 @@
     <onentry>
       <log label="[sspeech[numberofday][16][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][16][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][16][]')}" />
       <send event="CANTEENS_DAYSNUMBER_16" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4175,7 +4175,7 @@
     <onentry>
       <log label="[sspeech[numberofday][7][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][7][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][7][]')}" />
       <send event="CANTEENS_DAYSNUMBER_7" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4206,7 +4206,7 @@
     <onentry>
       <log label="[sspeech[numberofday][26][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][26][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][26][]')}" />
       <send event="CANTEENS_DAYSNUMBER_26" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4384,7 +4384,7 @@
     <onentry>
       <log label="[sspeech[numberofday][15][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][15][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][15][]')}" />
       <send event="CANTEENS_DAYSNUMBER_15" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4415,7 +4415,7 @@
     <onentry>
       <log label="[sspeech[numberofday][11][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][11][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][11][]')}" />
       <send event="CANTEENS_DAYSNUMBER_11" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4467,7 +4467,7 @@
     <onentry>
       <log label="[sspeech[numberofday][21][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][21][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][21][]')}" />
       <send event="CANTEENS_DAYSNUMBER_21" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4509,7 +4509,7 @@
     <onentry>
       <log label="[sspeech[canteens][type5][santiago]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][Santiago][SUBTYPE2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE1][Santiago][today][today][]')}" />
       <send event="CANTEENS_SANTIAGO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4540,7 +4540,7 @@
     <onentry>
       <log label="[sspeech[numberofday][31][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][31][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][31][]')}" />
       <send event="CANTEENS_DAYSNUMBER_31" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4571,7 +4571,7 @@
     <onentry>
       <log label="[sspeech[numberofday][6][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][6][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][6][]')}" />
       <send event="CANTEENS_DAYSNUMBER_6" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4749,7 +4749,7 @@
     <onentry>
       <log label="[sspeech[numberofday][9][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][9][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][9][]')}" />
       <send event="CANTEENS_DAYSNUMBER_9" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4822,7 +4822,7 @@
     <onentry>
       <log label="[sspeech[numberofday][8][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][8][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][8][]')}" />
       <send event="CANTEENS_DAYSNUMBER_8" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4864,7 +4864,7 @@
     <onentry>
       <log label="[sspeech[canteens][type5][crasto]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][Crasto][SUBTYPE2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE1][Crasto][today][today][]')}" />
       <send event="CANTEENS_CRASTO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5408,7 +5408,7 @@
     <onentry>
       <log label="[sspeech[numberofday][24][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][24][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][24][]')}" />
       <send event="CANTEENS_DAYSNUMBER_24" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5481,7 +5481,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][quinta][4]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][quinta][4]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][quinta][4]')}" />
       <send event="CANTEENS_DAYSWEEK_QUINTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5512,7 +5512,7 @@
     <onentry>
       <log label="[sspeech[numberofday][3][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][3][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][3][]')}" />
       <send event="CANTEENS_DAYSNUMBER_3" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5564,7 +5564,7 @@
     <onentry>
       <log label="[sspeech[dayofweek][quarta][3]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][dayOfWeek][quarta][3]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][dayOfWeek][quarta][3]')}" />
       <send event="CANTEENS_DAYSWEEK_QUARTA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5595,7 +5595,7 @@
     <onentry>
       <log label="[sspeech[numberofday][12][]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE3][numberOfDay][12][]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE5][SUBTYPE2][numberOfDay][12][]')}" />
       <send event="CANTEENS_DAYSNUMBER_12" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
