@@ -272,23 +272,47 @@ namespace AppGui
 
         public void manageDialogueCanteen(List<CanteenData> canteens)
         {
+            List<CanteenData> openCanteens = new List<CanteenData>();
+            List<CanteenData> closedCanteens = new List<CanteenData>();
 
-            StringBuilder phrase = new StringBuilder();
-
-            foreach (var canteen in canteens)
-            {
+            foreach (var canteen in canteens) {
                 if (canteen.Disabled.Equals("0"))
-                {
-                    phrase.Append(answers.getCanteenMeals(canteen));
-                }
+                    openCanteens.Add(canteen);
+
                 else
-                {
-                    phrase.Append(answers.getDisableCanteen(canteen));
-                }
-                phrase.Append("\n");
+                    closedCanteens.Add(canteen);
             }
 
-            t.Speak(phrase.ToString());
+            int size = canteens.Count;
+
+            string phrase;
+
+            if (size.Equals(0))
+            {
+                phrase = "Não tenho informação sobre as refeições para esse dia";
+            }
+
+            else if (closedCanteens.Count.Equals(size))
+            {
+                phrase = "As cantinas da universidade estão todas fechadas";
+            }
+
+            else if (openCanteens.Count.Equals(1))
+            {
+                phrase = answers.getCanteenMeals(openCanteens.ElementAt(0));
+            }
+
+            else if (openCanteens.Count.Equals(0) && closedCanteens.Count.Equals(1))
+            {
+                phrase = answers.getDisableCanteen(closedCanteens.ElementAt(1));
+            }
+
+            else
+            {
+                phrase = "Encontrei " + openCanteens.Count + " refeições";
+            }
+
+            t.Speak(phrase);
         }
 
         public void manageDialogueCanteenHelp()
