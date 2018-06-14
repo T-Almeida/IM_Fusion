@@ -95,14 +95,29 @@ namespace AppGui
                 {
 
                     TicketData ticket = getTicket(json, "A", "licenciatura e mestrado");
-                    dManager.displaySAC(new List<TicketData>(1) { ticket });
+                    if (ticket.Enabled)
+                        dManager.displaySAC(new List<TicketData>(1) { ticket });
+
+                    else
+                    {
+                        dManager.displayServiceNotAvailable("Fila de atendimento fechada");
+                    }
+
                     dManager.manageDialogueSAC(ticket, args[0]);
                 }
 
                 else
                 {
                     TicketData ticket = getTicket(json, args[1], args[2]);
-                    dManager.displaySAC(new List<TicketData>(1) { ticket });
+
+                    if (ticket.Enabled)
+                        dManager.displaySAC(new List<TicketData>(1) { ticket });
+
+                    else
+                    {
+                        dManager.displayServiceNotAvailable("Fila de atendimento fechada");
+                    }
+
                     dManager.manageDialogueSAC(ticket, args[0]);
                 }
             }
