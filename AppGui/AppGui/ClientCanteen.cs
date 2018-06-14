@@ -304,7 +304,7 @@ namespace AppGui
 
                 else
                 {
-                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 2).ToArray<string>());
+                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 3).ToArray<string>());
 
                     if (date_descripton == null)
                     {

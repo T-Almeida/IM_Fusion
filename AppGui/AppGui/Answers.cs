@@ -51,11 +51,10 @@ namespace AppGui
             "O serviço de parque de estacionamento não parece estar a funcionar"
         };
 
-        
 
         private string[] allParksFreeSTART = new string[] {
-            "Podes estacionar nos seguintes parques:",
-            "Os seguintes parques de estacionamento estão livres:"
+            "Podes estacionar em <NUM_PARQUES> parques",
+            "Estão livres <NUM_PARQUES> parques"
         };
 
         private string[] allParksFree = new string[] {
@@ -76,8 +75,8 @@ namespace AppGui
         };
 
         private string[] ticketsDescriptionStart = new string[] {
-            "Ok, encontrei as seguintes filas em atendimento:",
-            "Estas são as filas que estão a atender:"
+            "Ok, encontrei <NUM_FILAS> filas em atendimento",
+            "Estão <NUM_FILAS> filas abertas"
           };
 
         private string[] ticketDescription = new string[] {
@@ -148,8 +147,8 @@ namespace AppGui
         };
 
         private string[] allNewsSTART = new string[] {
-            "Ok, encontrei as seguintes notícias:",
-            "Encontrei as seguintes novidades"
+            "Ok, encontrei <NUM_NOTICIAS> notícias",
+            "Encontrei <NUM_NOTICIAS> novidades"
         };
 
         private string[] helpNewsTrue = new string[] {
@@ -339,16 +338,7 @@ namespace AppGui
 
         public string getAllParksFree(List<ParkData> park)
         {
-            StringBuilder sb = new StringBuilder(allParksFreeSTART[random.Next(0, allParksFreeSTART.Length)]);
-            sb.Append(".\n");
-            //TODO SORT PARK FOR FREE SPACE
-            foreach (var p in park)
-            {
-                if (p.Livre <= 0) continue;
-                sb.Append(allParksFree[random.Next(0, allParksFree.Length)].Replace("<NOME_PARQUE_ESTACIONAMENTO>", p.Nome).Replace("<NUM_LIVRES>", p.Livre.ToString()));
-                sb.Append(".\n");//n sei se o speak tem em conta pontuação
-            }
-            return sb.ToString();
+            return allParksFreeSTART[random.Next(0, allParksFreeSTART.Length)].Replace("<NUM_PARQUES>", park.Count.ToString()).ToString();
         }
 
         public string getPraksHelp(List<ParkData> park)
@@ -367,18 +357,8 @@ namespace AppGui
 
         public string getParkServiceUnavailable() { return parkServiceUnavailable[random.Next(0, parkServiceUnavailable.Length)]; }
 
-        public string getTicketsInfo(List<TicketData> tickets) { 
-            StringBuilder sb = new StringBuilder(ticketsDescriptionStart[0]);
-            sb.Append("\n");
-
-            foreach(TicketData ticket in tickets)
-            {
-                sb.Append(ticketDescription[random.Next(0, ticketDescription.Length)]
-                    .Replace("<NOME_DA_FILA>", ticket.Letter).Replace("<DESCRIÇÃO>", ticket.Description)
-                    .Replace("<NÚMERO_DA_SENHA>", ticket.Latest.ToString()));
-            }
-            
-            return sb.ToString();
+        public string getTicketsInfo(List<TicketData> tickets) {
+            return ticketsDescriptionStart[random.Next(0, ticketsDescriptionStart.Length)].Replace("<NUM_FILAS>", tickets.Count.ToString());
         }
 
         public string getTicketNotFound(TicketData ticket) { return ticketNotFound[random.Next(0, ticketNotFound.Length)].Replace("<NOME_DA_FILA>", ticket.Description);}
@@ -395,14 +375,7 @@ namespace AppGui
 
         public string getAllNews(List<NewsData> news)
         {
-            StringBuilder sb = new StringBuilder(allNewsSTART[random.Next(0, allNewsSTART.Length)]);
-            sb.Append(".\n");
-            //TODO SORT PARK FOR FREE SPACE
-            foreach (var p in news)
-            {
-                sb.Append(allNews[random.Next(0, allNews.Length)].Replace("<TITULO_NOTICA>", p.Title));
-            }
-            return sb.ToString();
+            return allNewsSTART[random.Next(0, allNewsSTART.Length)].Replace("<NUM_NOTICIAS>", news.Count.ToString());
         }
 
         public string getNewsDescription(NewsData newsData) { return newsDescription[random.Next(0, newsDescription.Length)].Replace("<DESCRICAO>", newsData.Description); ; }
