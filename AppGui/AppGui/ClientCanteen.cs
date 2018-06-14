@@ -19,6 +19,8 @@ namespace AppGui
         private HttpClient client;
         private ModalitiesManager dManager;
         private CultureInfo culture;
+        private int day;
+        private int month;
 
         public ClientCanteen(ModalitiesManager dManager)
         {
@@ -90,10 +92,10 @@ namespace AppGui
 
             else if (new_args[1].ToString().Equals("numberOfDay"))
             {
-                int day = int.Parse(new_args[2].ToString());
+                day = int.Parse(new_args[2].ToString());
 
                 DateTime today = DateTime.Today;
-                int month = today.Month;
+                month = today.Month;
                 int year = today.Year;
 
                 if (day > today.Day && day > DateTime.DaysInMonth(year, month) && month != 12)
@@ -151,7 +153,7 @@ namespace AppGui
 
                 if (date_descripton == null)
                 {
-                    dManager.manageDialogueCanteenInvalidDate(date_descripton.Item1.Day, date_descripton.Item1.Month);
+                    dManager.manageDialogueCanteenInvalidDate(day, month);
                     return;
                 }
 
@@ -194,7 +196,7 @@ namespace AppGui
 
                 if (date_descripton == null)
                 {
-                    dManager.manageDialogueCanteenInvalidDate(date_descripton.Item1.Day, date_descripton.Item1.Month);
+                    dManager.manageDialogueCanteenInvalidDate(day, month);
                     return;
                 }
 
@@ -261,7 +263,7 @@ namespace AppGui
 
                     if (date_descripton == null)
                     {
-                        dManager.manageDialogueCanteenInvalidDate(date_descripton.Item1.Day, date_descripton.Item1.Month);
+                        dManager.manageDialogueCanteenInvalidDate(day, month);
                         return;
                     }
 
@@ -308,7 +310,7 @@ namespace AppGui
 
                     if (date_descripton == null)
                     {
-                        dManager.manageDialogueCanteenInvalidDate(date_descripton.Item1.Day, date_descripton.Item1.Month);
+                        dManager.manageDialogueCanteenInvalidDate(day, month);
                         return;
                     }
 

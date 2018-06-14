@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Navigation;
 using System.Windows.Threading;
 
@@ -230,10 +231,53 @@ namespace AppGui
         {
             window.Dispatcher.BeginInvoke((Action)(() =>
             {
-                CanteensPage page = new CanteensPage(meals, date);
+                getCanteensPage(meals, date);
                 window.NavigationService.Navigate(page);
                 window.isInHelpPage = false;
             }));
+        }
+
+
+        public Page getCanteensPage(List<CanteenData> canteens, string date)
+        {
+            List<CanteenData> openCanteens = new List<CanteenData>();
+            List<CanteenData> closedCanteens = new List<CanteenData>();
+
+            foreach (var canteen in canteens)
+            {
+                if (canteen.Disabled.Equals("0"))
+                    openCanteens.Add(canteen);
+
+                else
+                    closedCanteens.Add(canteen);
+            }
+
+            int size = canteens.Count;
+
+            Page page;
+
+            if (size.Equals(0))
+            {
+                page = new ServiceNotAvailable("Ementas " + date + " ainda não publicadas");
+            }
+
+            else if (closedCanteens.Count.Equals(size))
+            {
+                page = new ServiceNotAvailable("As cantinas da universidade estão todas fechadas " + date);
+            }
+
+           
+            else if (openCanteens.Count.Equals(0) && closedCanteens.Count.Equals(1))
+            {
+                page = new ServiceNotAvailable("Cantina fechada " + date);
+            }
+
+            else 
+            {
+                page = new CanteensPage(canteens, date);
+            }
+
+            return page;
         }
 
         public void displayParks(List<ParkData> parks)
@@ -315,6 +359,11 @@ namespace AppGui
             else if (openCanteens.Count.Equals(0) && closedCanteens.Count.Equals(1))
             {
                 phrase = answers.getDisableCanteen(closedCanteens.ElementAt(1));
+            }
+
+            else if (openCanteens.Count.Equals(0) && closedCanteens.Count.Equals(0))
+            {
+                phrase = "";
             }
 
             else
@@ -577,11 +626,6 @@ namespace AppGui
         public void manageDialogueRepeat()
         {
             t.SpeakRepeat();
-        }
-
-        private void manageDialogueNotRecognize()
-        {
-            t.Speak("Desculpa, mas essa frase não faz sentido");
         }
 
         public void manageDialogueWeatherConnectionErrors(string error, string description)
