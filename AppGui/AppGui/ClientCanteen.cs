@@ -250,7 +250,7 @@ namespace AppGui
                 Console.WriteLine("---------------------------------------------- " + meals[0].Vegetarian);
             }
 
-            else if (args[0].Equals("TYPE6"))
+            else if (args[0].Equals("TYPE7"))
             {
 
                 if (args[1].Equals("SUBTYPE1"))
@@ -304,7 +304,7 @@ namespace AppGui
 
                 else
                 {
-                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 3).ToArray<string>());
+                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 1).ToArray<string>());
 
                     if (date_descripton == null)
                     {
