@@ -259,7 +259,7 @@ namespace AppGui
                 {
                     string canteen = args[2].Equals("Crasto") ? "Refeitório do Crasto" : "Refeitório de Santiago";
 
-                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 3).ToArray<string>());
+                    date_descripton = getValidDate_Description(args.Where((_, index) => index >= 2).ToArray<string>());
 
                     if (date_descripton == null)
                     {

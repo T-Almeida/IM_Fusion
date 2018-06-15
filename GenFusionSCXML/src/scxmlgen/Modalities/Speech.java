@@ -12,11 +12,11 @@ public enum Speech implements IModality{
     //days week
     DAYSWEEK_DOMINGO("[dayOfWeek][domingo][0]",GenFusionSCXML.TIMEOUT),
     DAYSWEEK_SEGUNDA("[dayOfWeek][segunda][1]",GenFusionSCXML.TIMEOUT),
-    DAYSWEEK_TERCA("[dayOfWeek][terça][2]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_TERCA("[dayOfWeek][ter(c)a][2]",GenFusionSCXML.TIMEOUT),
     DAYSWEEK_QUARTA("[dayOfWeek][quarta][3]",GenFusionSCXML.TIMEOUT),
     DAYSWEEK_QUINTA("[dayOfWeek][quinta][4]",GenFusionSCXML.TIMEOUT),
     DAYSWEEK_SEXTA("[dayOfWeek][sexta][5]",GenFusionSCXML.TIMEOUT),
-    DAYSWEEK_SABADO("[dayOfWeek][sábado][6]",GenFusionSCXML.TIMEOUT),
+    DAYSWEEK_SABADO("[dayOfWeek][s(a_acent)bado][6]",GenFusionSCXML.TIMEOUT),
     
     //days relative
     DAYSREL_TODAY("[today][today][]",GenFusionSCXML.TIMEOUT),
@@ -71,11 +71,11 @@ public enum Speech implements IModality{
     //days week
     CANTEENS_CRASTO_DAYSWEEK_DOMINGO("[CANTEENS][TYPE7][Crasto][dayOfWeek][domingo][0]",GenFusionSCXML.TIMEOUT),
     CANTEENS_CRASTO_DAYSWEEK_SEGUNDA("[CANTEENS][TYPE7][Crasto][dayOfWeek][segunda][1]",GenFusionSCXML.TIMEOUT),
-    CANTEENS_CRASTO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][Crasto][dayOfWeek][terça][2]",GenFusionSCXML.TIMEOUT),
+    CANTEENS_CRASTO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][Crasto][dayOfWeek][ter(c)a][2]",GenFusionSCXML.TIMEOUT),
     CANTEENS_CRASTO_DAYSWEEK_QUARTA("[CANTEENS][TYPE7][Crasto][dayOfWeek][quarta][3]",GenFusionSCXML.TIMEOUT),
     CANTEENS_CRASTO_DAYSWEEK_QUINTA("[CANTEENS][TYPE7][Crasto][dayOfWeek][quinta][4]",GenFusionSCXML.TIMEOUT),
     CANTEENS_CRASTO_DAYSWEEK_SEXTA("[CANTEENS][TYPE7][Crasto][dayOfWeek][sexta][5]",GenFusionSCXML.TIMEOUT),
-    CANTEENS_CRASTO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][Crasto][dayOfWeek][sábado][6]",GenFusionSCXML.TIMEOUT),
+    CANTEENS_CRASTO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][Crasto][dayOfWeek][s(a_acent)bado][6]",GenFusionSCXML.TIMEOUT),
     
     //days relative
     CANTEENS_CRASTO_DAYSREL_TODAY("[CANTEENS][TYPE7][Crasto][today][today][]",GenFusionSCXML.TIMEOUT),
@@ -117,11 +117,11 @@ public enum Speech implements IModality{
     //days week
     CANTEENS_SANTIAGO_DAYSWEEK_DOMINGO("[CANTEENS][TYPE7][Santiago][dayOfWeek][domingo][0]",GenFusionSCXML.TIMEOUT),
     CANTEENS_SANTIAGO_DAYSWEEK_SEGUNDA("[CANTEENS][TYPE7][Santiago][dayOfWeek][segunda][1]",GenFusionSCXML.TIMEOUT),
-    CANTEENS_SANTIAGO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][Santiago][dayOfWeek][terça][2]",GenFusionSCXML.TIMEOUT),
+    CANTEENS_SANTIAGO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][Santiago][dayOfWeek][ter(c)a][2]",GenFusionSCXML.TIMEOUT),
     CANTEENS_SANTIAGO_DAYSWEEK_QUARTA("[CANTEENS][TYPE7][Santiago][dayOfWeek][quarta][3]",GenFusionSCXML.TIMEOUT),
     CANTEENS_SANTIAGO_DAYSWEEK_QUINTA("[CANTEENS][TYPE7][Santiago][dayOfWeek][quinta][4]",GenFusionSCXML.TIMEOUT),
     CANTEENS_SANTIAGO_DAYSWEEK_SEXTA("[CANTEENS][TYPE7][Santiago][dayOfWeek][sexta][5]",GenFusionSCXML.TIMEOUT),
-    CANTEENS_SANTIAGO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][Santiago][dayOfWeek][sábado][6]",GenFusionSCXML.TIMEOUT),
+    CANTEENS_SANTIAGO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][Santiago][dayOfWeek][s(a_acent)bado][6]",GenFusionSCXML.TIMEOUT),
     
     //days relative
     CANTEENS_SANTIAGO_DAYSREL_TODAY("[CANTEENS][TYPE7][Santiago][today][today][]",GenFusionSCXML.TIMEOUT),
@@ -176,7 +176,7 @@ public enum Speech implements IModality{
     SENHAS_FILA_D("[D][D]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_PRIORITARIO("[D][de(_)atendimento(_)priorit(a_acent)rio]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_F("[F][F]",GenFusionSCXML.TIMEOUT),
-    SENHAS_FILA_PROFISSIONAL("[F][de(_)inserção(_)profissional]",GenFusionSCXML.TIMEOUT),
+    SENHAS_FILA_PROFISSIONAL("[F][de(_)inser(c)(a_till)o(_)profissional]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_G("[G][G]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_MODALIDADE_ERASMUS("[G][de(_)mobilidade(_)erasmus]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_ERASMUS("[G][de_erasmus]",GenFusionSCXML.TIMEOUT),

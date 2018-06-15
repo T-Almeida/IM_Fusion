@@ -9,11 +9,11 @@ public enum Output implements IOutput{
     //weather days week
     WEATHER_DAYSWEEK_DOMINGO("[WEATHER][TYPE1][dayOfWeek][domingo][0]"),
     WEATHER_DAYSWEEK_SEGUNDA("[WEATHER][TYPE1][dayOfWeek][segunda][1]"),
-    WEATHER_DAYSWEEK_TERCA("[WEATHER][TYPE1][dayOfWeek][terça][2]"),
+    WEATHER_DAYSWEEK_TERCA("[WEATHER][TYPE1][dayOfWeek][ter(c)a][2]"),
     WEATHER_DAYSWEEK_QUARTA("[WEATHER][TYPE1][dayOfWeek][quarta][3]"),
     WEATHER_DAYSWEEK_QUINTA("[WEATHER][TYPE1][dayOfWeek][quinta][4]"),
     WEATHER_DAYSWEEK_SEXTA("[WEATHER][TYPE1][dayOfWeek][sexta][5]"),
-    WEATHER_DAYSWEEK_SABADO("[WEATHER][TYPE1][dayOfWeek][sábado][6]"),
+    WEATHER_DAYSWEEK_SABADO("[WEATHER][TYPE1][dayOfWeek][s(a_acent)bado][6]"),
     //weather days rel
     WEATHER_DAYSREL_TODAY("[WEATHER][TYPE1][today][today][]"),
     WEATHER_DAYSREL_TOMORROW("[WEATHER][TYPE1][tomorrow][tomorrow][]"),
@@ -63,11 +63,11 @@ public enum Output implements IOutput{
 
     CANTEENS_CRASTO_DAYSWEEK_DOMINGO("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][domingo][0]"),
     CANTEENS_CRASTO_DAYSWEEK_SEGUNDA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][segunda][1]"),
-    CANTEENS_CRASTO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][terça][2]"),
+    CANTEENS_CRASTO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][ter(c)a][2]"),
     CANTEENS_CRASTO_DAYSWEEK_QUARTA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][quarta][3]"),
     CANTEENS_CRASTO_DAYSWEEK_QUINTA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][quinta][4]"),
     CANTEENS_CRASTO_DAYSWEEK_SEXTA("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][sexta][5]"),
-    CANTEENS_CRASTO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][sábado][6]"),
+    CANTEENS_CRASTO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][s(a_acent)bado][6]"),
     
     //days relative
     CANTEENS_CRASTO_DAYSREL_TODAY("[CANTEENS][TYPE7][SUBTYPE1][Crasto][today][today][]"),
@@ -110,11 +110,11 @@ public enum Output implements IOutput{
     //days week
     CANTEENS_SANTIAGO_DAYSWEEK_DOMINGO("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][domingo][0]"),
     CANTEENS_SANTIAGO_DAYSWEEK_SEGUNDA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][segunda][1]"),
-    CANTEENS_SANTIAGO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][terça][2]"),
+    CANTEENS_SANTIAGO_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][ter(c)a][2]"),
     CANTEENS_SANTIAGO_DAYSWEEK_QUARTA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][quarta][3]"),
     CANTEENS_SANTIAGO_DAYSWEEK_QUINTA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][quinta][4]"),
     CANTEENS_SANTIAGO_DAYSWEEK_SEXTA("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][sexta][5]"),
-    CANTEENS_SANTIAGO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][sábado][6]"),
+    CANTEENS_SANTIAGO_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][s(a_acent)bado][6]"),
     
     //days relative
     CANTEENS_SANTIAGO_DAYSREL_TODAY("[CANTEENS][TYPE7][SUBTYPE1][Santiago][today][today][]"),
@@ -159,11 +159,11 @@ public enum Output implements IOutput{
     //days week
     CANTEENS_DAYSWEEK_DOMINGO("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][domingo][0]"),
     CANTEENS_DAYSWEEK_SEGUNDA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][segunda][1]"),
-    CANTEENS_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][terça][2]"),
+    CANTEENS_DAYSWEEK_TERCA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][ter(c)a][2]"),
     CANTEENS_DAYSWEEK_QUARTA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][quarta][3]"),
     CANTEENS_DAYSWEEK_QUINTA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][quinta][4]"),
     CANTEENS_DAYSWEEK_SEXTA("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][sexta][5]"),
-    CANTEENS_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][sábado][6]"),
+    CANTEENS_DAYSWEEK_SABADO("[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][s(a_acent)bado][6]"),
     
     //days relative
     CANTEENS_DAYSREL_TODAY("[CANTEENS][TYPE7][SUBTYPE2][today][today][]"),
@@ -216,7 +216,7 @@ public enum Output implements IOutput{
     SENHAS_FILA_D("[SAC][TYPE7][D][D]"),
     SENHAS_FILA_PRIORITARIO("[SAC][TYPE7][D][de(_)atendimento(_)priorit(a_acent)rio]"),
     SENHAS_FILA_F("[SAC][TYPE7][F][F]"),
-    SENHAS_FILA_PROFISSIONAL("[SAC][TYPE7][F][de(_)inserção(_)profissional]"),
+    SENHAS_FILA_PROFISSIONAL("[SAC][TYPE7][F][de(_)inser(c)(a_till)o(_)profissional]"),
     SENHAS_FILA_G("[SAC][TYPE7][G][G]"),
     SENHAS_FILA_MODALIDADE_ERASMUS("[SAC][TYPE7][G][de(_)mobilidade(_)erasmus]"),
     SENHAS_FILA_ERASMUS("[SAC][TYPE7][G][de_erasmus]"),

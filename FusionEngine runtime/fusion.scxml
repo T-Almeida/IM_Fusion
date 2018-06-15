@@ -14,7 +14,7 @@
     <onentry>
       <log label="[main]" expr="READY" />
     </onentry>
-    <transition target="sspeech[dayofweek][sábado][6]" event="[dayOfWeek][sábado][6]" />
+    <transition target="sspeech[dayofweek][s(a_acent)bado][6]" event="[dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sspeech[tomorrow][tomorrow][]" event="[tomorrow][tomorrow][]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][26][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][26][]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][6][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][6][]" />
@@ -26,7 +26,7 @@
     <transition target="sspeech[canteens][type7][santiago][numberofday][24][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][24][]" />
     <transition target="sspeech[canteens][type7][crasto][today][today][]" event="[CANTEENS][TYPE7][Crasto][today][today][]" />
     <transition target="sguestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
-    <transition target="sspeech[canteens][type7][santiago][dayofweek][terça][2]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][terça][2]" />
+    <transition target="sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][ter(c)a][2]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][29][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][29][]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][18][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][18][]" />
     <transition target="sspeech[g][de(_)mobilidade(_)erasmus]" event="[G][de(_)mobilidade(_)erasmus]" />
@@ -76,7 +76,7 @@
     <transition target="sspeech[h][h]" event="[H][H]" />
     <transition target="sspeech[numberofday][17][]" event="[numberOfDay][17][]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][18][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][18][]" />
-    <transition target="sspeech[f][de(_)inserção(_)profissional]" event="[F][de(_)inserção(_)profissional]" />
+    <transition target="sspeech[f][de(_)inser(c)(a_till)o(_)profissional]" event="[F][de(_)inser(c)(a_till)o(_)profissional]" />
     <transition target="sspeech[numberofday][30][]" event="[numberOfDay][30][]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][9][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][9][]" />
     <transition target="sspeech[numberofday][5][]" event="[numberOfDay][5][]" />
@@ -86,12 +86,12 @@
     <transition target="sspeech[dayofweek][domingo][0]" event="[dayOfWeek][domingo][0]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][2][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][2][]" />
     <transition target="sspeech[c][c]" event="[C][C]" />
-    <transition target="sspeech[dayofweek][terça][2]" event="[dayOfWeek][terça][2]" />
+    <transition target="sspeech[dayofweek][ter(c)a][2]" event="[dayOfWeek][ter(c)a][2]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][21][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][21][]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][26][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][26][]" />
     <transition target="sspeech[canteens][type7][santiago][tomorrow][tomorrow][]" event="[CANTEENS][TYPE7][Santiago][tomorrow][tomorrow][]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][17][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][17][]" />
-    <transition target="sspeech[canteens][type7][santiago][dayofweek][sábado][6]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][sábado][6]" />
+    <transition target="sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sspeech[linguas]" event="[Linguas]" />
     <transition target="sspeech[numberofday][1][]" event="[numberOfDay][1][]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][31][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][31][]" />
@@ -128,7 +128,7 @@
     <transition target="sspeech[canteens][type7][santiago]" event="[CANTEENS][TYPE7][Santiago]" />
     <transition target="sspeech[numberofday][31][]" event="[numberOfDay][31][]" />
     <transition target="sspeech[numberofday][6][]" event="[numberOfDay][6][]" />
-    <transition target="sspeech[canteens][type7][crasto][dayofweek][terça][2]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][terça][2]" />
+    <transition target="sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][ter(c)a][2]" />
     <transition target="sspeech[canteens][type7][crasto][numberofday][28][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][28][]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][3][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][3][]" />
     <transition target="sspeech[residencias]" event="[Residencias]" />
@@ -165,44 +165,44 @@
     <transition target="sspeech[dayofweek][quarta][3]" event="[dayOfWeek][quarta][3]" />
     <transition target="sspeech[numberofday][12][]" event="[numberOfDay][12][]" />
     <transition target="sspeech[x][x]" event="[X][X]" />
-    <transition target="sspeech[canteens][type7][crasto][dayofweek][sábado][6]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][sábado][6]" />
+    <transition target="sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sspeech[canteens][type7][santiago][numberofday][13][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][13][]" />
   </state>
-  <state id="sspeech[dayofweek][sábado][6]">
+  <state id="sspeech[dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sspeech[dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sspeech[dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[dayofweek][sábado][6]" event="timeout-sspeech[dayofweek][sábado][6]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[dayofweek][s(a_acent)bado][6]" event="timeout-sspeech[dayofweek][s(a_acent)bado][6]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[dayofweek][sábado][6]-final" event="timeout-sspeech[dayofweek][sábado][6]" />
-    <transition target="sspeech[dayofweek][sábado][6]-guestures[weather][type1][tomorrow][tomorrow][]" event="[WEATHER][TYPE1][tomorrow][tomorrow][]" />
-    <transition target="sspeech[dayofweek][sábado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[dayofweek][s(a_acent)bado][6]-final" event="timeout-sspeech[dayofweek][s(a_acent)bado][6]" />
+    <transition target="sspeech[dayofweek][s(a_acent)bado][6]-guestures[weather][type1][tomorrow][tomorrow][]" event="[WEATHER][TYPE1][tomorrow][tomorrow][]" />
+    <transition target="sspeech[dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[dayofweek][sábado][6]" />
+      <cancel sendid="state1-timer-sspeech[dayofweek][s(a_acent)bado][6]" />
     </onexit>
   </state>
-  <state id="speech[dayofweek][sábado][6]-final">
+  <state id="speech[dayofweek][s(a_acent)bado][6]-final">
     <onentry>
-      <log label="[speech[dayofweek][sábado][6]-final]" expr="READY" />
+      <log label="[speech[dayofweek][s(a_acent)bado][6]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[dayofweek][sábado][6]-guestures[weather][type1][tomorrow][tomorrow][]">
+  <state id="sspeech[dayofweek][s(a_acent)bado][6]-guestures[weather][type1][tomorrow][tomorrow][]">
     <onentry>
-      <log label="[sspeech[dayofweek][sábado][6]-guestures[weather][type1][tomorrow][tomorrow][]]" expr="READY" />
+      <log label="[sspeech[dayofweek][s(a_acent)bado][6]-guestures[weather][type1][tomorrow][tomorrow][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="WEATHER_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[dayofweek][sábado][6]-guestures[canteens][type5]">
+  <state id="sspeech[dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[dayofweek][sábado][6]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -516,11 +516,11 @@
     <transition target="guestures[canteens][type5]-final" event="timeout-sguestures[canteens][type5]" />
     <transition target="sguestures[canteens][type5]-speech[dayofweek][domingo][0]" event="[dayOfWeek][domingo][0]" />
     <transition target="sguestures[canteens][type5]-speech[dayofweek][segunda][1]" event="[dayOfWeek][segunda][1]" />
-    <transition target="sguestures[canteens][type5]-speech[dayofweek][terça][2]" event="[dayOfWeek][terça][2]" />
+    <transition target="sguestures[canteens][type5]-speech[dayofweek][ter(c)a][2]" event="[dayOfWeek][ter(c)a][2]" />
     <transition target="sguestures[canteens][type5]-speech[dayofweek][quarta][3]" event="[dayOfWeek][quarta][3]" />
     <transition target="sguestures[canteens][type5]-speech[dayofweek][quinta][4]" event="[dayOfWeek][quinta][4]" />
     <transition target="sguestures[canteens][type5]-speech[dayofweek][sexta][5]" event="[dayOfWeek][sexta][5]" />
-    <transition target="sguestures[canteens][type5]-speech[dayofweek][sábado][6]" event="[dayOfWeek][sábado][6]" />
+    <transition target="sguestures[canteens][type5]-speech[dayofweek][s(a_acent)bado][6]" event="[dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sguestures[canteens][type5]-speech[today][today][]" event="[today][today][]" />
     <transition target="sguestures[canteens][type5]-speech[tomorrow][tomorrow][]" event="[tomorrow][tomorrow][]" />
     <transition target="sguestures[canteens][type5]-speech[numberofday][1][]" event="[numberOfDay][1][]" />
@@ -558,11 +558,11 @@
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago]" event="[CANTEENS][TYPE7][Santiago]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][domingo][0]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][domingo][0]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][segunda][1]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][segunda][1]" />
-    <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][terça][2]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][terça][2]" />
+    <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][ter(c)a][2]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][ter(c)a][2]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][quarta][3]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][quarta][3]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][quinta][4]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][quinta][4]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][sexta][5]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][sexta][5]" />
-    <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][sábado][6]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][sábado][6]" />
+    <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" event="[CANTEENS][TYPE7][Crasto][dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][today][today][]" event="[CANTEENS][TYPE7][Crasto][today][today][]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][tomorrow][tomorrow][]" event="[CANTEENS][TYPE7][Crasto][tomorrow][tomorrow][]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][numberofday][1][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][1][]" />
@@ -598,11 +598,11 @@
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][crasto][numberofday][31][]" event="[CANTEENS][TYPE7][Crasto][numberOfDay][31][]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][domingo][0]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][domingo][0]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][segunda][1]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][segunda][1]" />
-    <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][terça][2]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][terça][2]" />
+    <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][ter(c)a][2]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][ter(c)a][2]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][quarta][3]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][quarta][3]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][quinta][4]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][quinta][4]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][sexta][5]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][sexta][5]" />
-    <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][sábado][6]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][sábado][6]" />
+    <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" event="[CANTEENS][TYPE7][Santiago][dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][today][today][]" event="[CANTEENS][TYPE7][Santiago][today][today][]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][tomorrow][tomorrow][]" event="[CANTEENS][TYPE7][Santiago][tomorrow][tomorrow][]" />
     <transition target="sguestures[canteens][type5]-speech[canteens][type7][santiago][numberofday][1][]" event="[CANTEENS][TYPE7][Santiago][numberOfDay][1][]" />
@@ -666,11 +666,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[dayofweek][terça][2]">
+  <state id="sguestures[canteens][type5]-speech[dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[dayofweek][terça][2]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -702,11 +702,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[dayofweek][sábado][6]">
+  <state id="sguestures[canteens][type5]-speech[dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1044,11 +1044,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][terça][2]">
+  <state id="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][terça][2]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_CRASTO_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1080,11 +1080,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][sábado][6]">
+  <state id="sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_CRASTO_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1404,11 +1404,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][terça][2]">
+  <state id="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][terça][2]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_SANTIAGO_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1440,11 +1440,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][sábado][6]">
+  <state id="sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sguestures[canteens][type5]-speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_SANTIAGO_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -1746,31 +1746,31 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][santiago][dayofweek][terça][2]">
+  <state id="sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sspeech[canteens][type7][santiago][dayofweek][terça][2]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[canteens][type7][santiago][dayofweek][terça][2]" event="timeout-sspeech[canteens][type7][santiago][dayofweek][terça][2]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]" event="timeout-sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[canteens][type7][santiago][dayofweek][terça][2]-final" event="timeout-sspeech[canteens][type7][santiago][dayofweek][terça][2]" />
-    <transition target="sspeech[canteens][type7][santiago][dayofweek][terça][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[canteens][type7][santiago][dayofweek][ter(c)a][2]-final" event="timeout-sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]" />
+    <transition target="sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[canteens][type7][santiago][dayofweek][terça][2]" />
+      <cancel sendid="state1-timer-sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]" />
     </onexit>
   </state>
-  <state id="speech[canteens][type7][santiago][dayofweek][terça][2]-final">
+  <state id="speech[canteens][type7][santiago][dayofweek][ter(c)a][2]-final">
     <onentry>
-      <log label="[speech[canteens][type7][santiago][dayofweek][terça][2]-final]" expr="READY" />
+      <log label="[speech[canteens][type7][santiago][dayofweek][ter(c)a][2]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][santiago][dayofweek][terça][2]-guestures[canteens][type5]">
+  <state id="sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[canteens][type7][santiago][dayofweek][terça][2]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][santiago][dayofweek][ter(c)a][2]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_SANTIAGO_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -2918,11 +2918,11 @@
     <transition target="guestures[weather][type1][tomorrow][tomorrow][]-final" event="timeout-sguestures[weather][type1][tomorrow][tomorrow][]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][domingo][0]" event="[dayOfWeek][domingo][0]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][segunda][1]" event="[dayOfWeek][segunda][1]" />
-    <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][terça][2]" event="[dayOfWeek][terça][2]" />
+    <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][ter(c)a][2]" event="[dayOfWeek][ter(c)a][2]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][quarta][3]" event="[dayOfWeek][quarta][3]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][quinta][4]" event="[dayOfWeek][quinta][4]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][sexta][5]" event="[dayOfWeek][sexta][5]" />
-    <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][sábado][6]" event="[dayOfWeek][sábado][6]" />
+    <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][s(a_acent)bado][6]" event="[dayOfWeek][s(a_acent)bado][6]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[today][today][]" event="[today][today][]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[tomorrow][tomorrow][]" event="[tomorrow][tomorrow][]" />
     <transition target="sguestures[weather][type1][tomorrow][tomorrow][]-speech[numberofday][1][]" event="[numberOfDay][1][]" />
@@ -2986,11 +2986,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][terça][2]">
+  <state id="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][terça][2]]" expr="READY" />
+      <log label="[sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][ter(c)a][2]')}" />
       <send event="WEATHER_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3022,11 +3022,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][sábado][6]">
+  <state id="sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sguestures[weather][type1][tomorrow][tomorrow][]-speech[dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="WEATHER_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -3716,31 +3716,31 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[f][de(_)inserção(_)profissional]">
+  <state id="sspeech[f][de(_)inser(c)(a_till)o(_)profissional]">
     <onentry>
-      <log label="[sspeech[f][de(_)inserção(_)profissional]]" expr="READY" />
+      <log label="[sspeech[f][de(_)inser(c)(a_till)o(_)profissional]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[f][de(_)inserção(_)profissional]" event="timeout-sspeech[f][de(_)inserção(_)profissional]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[f][de(_)inser(c)(a_till)o(_)profissional]" event="timeout-sspeech[f][de(_)inser(c)(a_till)o(_)profissional]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[f][de(_)inserção(_)profissional]-final" event="timeout-sspeech[f][de(_)inserção(_)profissional]" />
-    <transition target="sspeech[f][de(_)inserção(_)profissional]-guestures[sac][type1]" event="[SAC][TYPE1]" />
+    <transition target="speech[f][de(_)inser(c)(a_till)o(_)profissional]-final" event="timeout-sspeech[f][de(_)inser(c)(a_till)o(_)profissional]" />
+    <transition target="sspeech[f][de(_)inser(c)(a_till)o(_)profissional]-guestures[sac][type1]" event="[SAC][TYPE1]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[f][de(_)inserção(_)profissional]" />
+      <cancel sendid="state1-timer-sspeech[f][de(_)inser(c)(a_till)o(_)profissional]" />
     </onexit>
   </state>
-  <state id="speech[f][de(_)inserção(_)profissional]-final">
+  <state id="speech[f][de(_)inser(c)(a_till)o(_)profissional]-final">
     <onentry>
-      <log label="[speech[f][de(_)inserção(_)profissional]-final]" expr="READY" />
+      <log label="[speech[f][de(_)inser(c)(a_till)o(_)profissional]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[f][de(_)inserção(_)profissional]-guestures[sac][type1]">
+  <state id="sspeech[f][de(_)inser(c)(a_till)o(_)profissional]-guestures[sac][type1]">
     <onentry>
-      <log label="[sspeech[f][de(_)inserção(_)profissional]-guestures[sac][type1]]" expr="READY" />
+      <log label="[sspeech[f][de(_)inser(c)(a_till)o(_)profissional]-guestures[sac][type1]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[SAC][TYPE7][F][de(_)inserção(_)profissional]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[SAC][TYPE7][F][de(_)inser(c)(a_till)o(_)profissional]')}" />
       <send event="SENHAS_FILA_PROFISSIONAL" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4056,41 +4056,41 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[dayofweek][terça][2]">
+  <state id="sspeech[dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sspeech[dayofweek][terça][2]]" expr="READY" />
+      <log label="[sspeech[dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[dayofweek][terça][2]" event="timeout-sspeech[dayofweek][terça][2]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[dayofweek][ter(c)a][2]" event="timeout-sspeech[dayofweek][ter(c)a][2]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[dayofweek][terça][2]-final" event="timeout-sspeech[dayofweek][terça][2]" />
-    <transition target="sspeech[dayofweek][terça][2]-guestures[weather][type1][tomorrow][tomorrow][]" event="[WEATHER][TYPE1][tomorrow][tomorrow][]" />
-    <transition target="sspeech[dayofweek][terça][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[dayofweek][ter(c)a][2]-final" event="timeout-sspeech[dayofweek][ter(c)a][2]" />
+    <transition target="sspeech[dayofweek][ter(c)a][2]-guestures[weather][type1][tomorrow][tomorrow][]" event="[WEATHER][TYPE1][tomorrow][tomorrow][]" />
+    <transition target="sspeech[dayofweek][ter(c)a][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[dayofweek][terça][2]" />
+      <cancel sendid="state1-timer-sspeech[dayofweek][ter(c)a][2]" />
     </onexit>
   </state>
-  <state id="speech[dayofweek][terça][2]-final">
+  <state id="speech[dayofweek][ter(c)a][2]-final">
     <onentry>
-      <log label="[speech[dayofweek][terça][2]-final]" expr="READY" />
+      <log label="[speech[dayofweek][ter(c)a][2]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[dayofweek][terça][2]-guestures[weather][type1][tomorrow][tomorrow][]">
+  <state id="sspeech[dayofweek][ter(c)a][2]-guestures[weather][type1][tomorrow][tomorrow][]">
     <onentry>
-      <log label="[sspeech[dayofweek][terça][2]-guestures[weather][type1][tomorrow][tomorrow][]]" expr="READY" />
+      <log label="[sspeech[dayofweek][ter(c)a][2]-guestures[weather][type1][tomorrow][tomorrow][]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[WEATHER][TYPE1][dayOfWeek][ter(c)a][2]')}" />
       <send event="WEATHER_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[dayofweek][terça][2]-guestures[canteens][type5]">
+  <state id="sspeech[dayofweek][ter(c)a][2]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[dayofweek][terça][2]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[dayofweek][ter(c)a][2]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE2][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -4211,31 +4211,31 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][santiago][dayofweek][sábado][6]">
+  <state id="sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sspeech[canteens][type7][santiago][dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[canteens][type7][santiago][dayofweek][sábado][6]" event="timeout-sspeech[canteens][type7][santiago][dayofweek][sábado][6]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" event="timeout-sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[canteens][type7][santiago][dayofweek][sábado][6]-final" event="timeout-sspeech[canteens][type7][santiago][dayofweek][sábado][6]" />
-    <transition target="sspeech[canteens][type7][santiago][dayofweek][sábado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-final" event="timeout-sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" />
+    <transition target="sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[canteens][type7][santiago][dayofweek][sábado][6]" />
+      <cancel sendid="state1-timer-sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]" />
     </onexit>
   </state>
-  <state id="speech[canteens][type7][santiago][dayofweek][sábado][6]-final">
+  <state id="speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-final">
     <onentry>
-      <log label="[speech[canteens][type7][santiago][dayofweek][sábado][6]-final]" expr="READY" />
+      <log label="[speech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][santiago][dayofweek][sábado][6]-guestures[canteens][type5]">
+  <state id="sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[canteens][type7][santiago][dayofweek][sábado][6]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][santiago][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Santiago][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_SANTIAGO_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -5464,31 +5464,31 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][crasto][dayofweek][terça][2]">
+  <state id="sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]">
     <onentry>
-      <log label="[sspeech[canteens][type7][crasto][dayofweek][terça][2]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[canteens][type7][crasto][dayofweek][terça][2]" event="timeout-sspeech[canteens][type7][crasto][dayofweek][terça][2]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]" event="timeout-sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[canteens][type7][crasto][dayofweek][terça][2]-final" event="timeout-sspeech[canteens][type7][crasto][dayofweek][terça][2]" />
-    <transition target="sspeech[canteens][type7][crasto][dayofweek][terça][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[canteens][type7][crasto][dayofweek][ter(c)a][2]-final" event="timeout-sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]" />
+    <transition target="sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[canteens][type7][crasto][dayofweek][terça][2]" />
+      <cancel sendid="state1-timer-sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]" />
     </onexit>
   </state>
-  <state id="speech[canteens][type7][crasto][dayofweek][terça][2]-final">
+  <state id="speech[canteens][type7][crasto][dayofweek][ter(c)a][2]-final">
     <onentry>
-      <log label="[speech[canteens][type7][crasto][dayofweek][terça][2]-final]" expr="READY" />
+      <log label="[speech[canteens][type7][crasto][dayofweek][ter(c)a][2]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][crasto][dayofweek][terça][2]-guestures[canteens][type5]">
+  <state id="sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[canteens][type7][crasto][dayofweek][terça][2]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][crasto][dayofweek][ter(c)a][2]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][terça][2]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][ter(c)a][2]')}" />
       <send event="CANTEENS_CRASTO_DAYSWEEK_TERCA" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -6169,7 +6169,7 @@
     <transition target="sguestures[sac][type1]-speech[d][d]" event="[D][D]" />
     <transition target="sguestures[sac][type1]-speech[d][de(_)atendimento(_)priorit(a_acent)rio]" event="[D][de(_)atendimento(_)priorit(a_acent)rio]" />
     <transition target="sguestures[sac][type1]-speech[f][f]" event="[F][F]" />
-    <transition target="sguestures[sac][type1]-speech[f][de(_)inserção(_)profissional]" event="[F][de(_)inserção(_)profissional]" />
+    <transition target="sguestures[sac][type1]-speech[f][de(_)inser(c)(a_till)o(_)profissional]" event="[F][de(_)inser(c)(a_till)o(_)profissional]" />
     <transition target="sguestures[sac][type1]-speech[g][g]" event="[G][G]" />
     <transition target="sguestures[sac][type1]-speech[g][de(_)mobilidade(_)erasmus]" event="[G][de(_)mobilidade(_)erasmus]" />
     <transition target="sguestures[sac][type1]-speech[g][de_erasmus]" event="[G][de_erasmus]" />
@@ -6289,11 +6289,11 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sguestures[sac][type1]-speech[f][de(_)inserção(_)profissional]">
+  <state id="sguestures[sac][type1]-speech[f][de(_)inser(c)(a_till)o(_)profissional]">
     <onentry>
-      <log label="[sguestures[sac][type1]-speech[f][de(_)inserção(_)profissional]]" expr="READY" />
+      <log label="[sguestures[sac][type1]-speech[f][de(_)inser(c)(a_till)o(_)profissional]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[SAC][TYPE7][F][de(_)inserção(_)profissional]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[SAC][TYPE7][F][de(_)inser(c)(a_till)o(_)profissional]')}" />
       <send event="SENHAS_FILA_PROFISSIONAL" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -6797,31 +6797,31 @@
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][crasto][dayofweek][sábado][6]">
+  <state id="sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]">
     <onentry>
-      <log label="[sspeech[canteens][type7][crasto][dayofweek][sábado][6]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[canteens][type7][crasto][dayofweek][sábado][6]" event="timeout-sspeech[canteens][type7][crasto][dayofweek][sábado][6]" delay="3000" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" event="timeout-sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[canteens][type7][crasto][dayofweek][sábado][6]-final" event="timeout-sspeech[canteens][type7][crasto][dayofweek][sábado][6]" />
-    <transition target="sspeech[canteens][type7][crasto][dayofweek][sábado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
+    <transition target="speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-final" event="timeout-sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" />
+    <transition target="sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]" event="[CANTEENS][TYPE5]" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[canteens][type7][crasto][dayofweek][sábado][6]" />
+      <cancel sendid="state1-timer-sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]" />
     </onexit>
   </state>
-  <state id="speech[canteens][type7][crasto][dayofweek][sábado][6]-final">
+  <state id="speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-final">
     <onentry>
-      <log label="[speech[canteens][type7][crasto][dayofweek][sábado][6]-final]" expr="READY" />
+      <log label="[speech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-final]" expr="READY" />
       <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[NOTRECOGNIZE]')}" />
       <send event="GERAL_PASS_DONT_RECOGNIZE" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
-  <state id="sspeech[canteens][type7][crasto][dayofweek][sábado][6]-guestures[canteens][type5]">
+  <state id="sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]">
     <onentry>
-      <log label="[sspeech[canteens][type7][crasto][dayofweek][sábado][6]-guestures[canteens][type5]]" expr="READY" />
+      <log label="[sspeech[canteens][type7][crasto][dayofweek][s(a_acent)bado][6]-guestures[canteens][type5]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][sábado][6]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[CANTEENS][TYPE7][SUBTYPE1][Crasto][dayOfWeek][s(a_acent)bado][6]')}" />
       <send event="CANTEENS_CRASTO_DAYSWEEK_SABADO" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
