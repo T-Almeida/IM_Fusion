@@ -21,7 +21,7 @@
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" x:Name="service" Margin="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource SubHeaderFontSize}"></TextBlock>
         <Image Grid.Row="0" Grid.ColumnSpan="2" Source="..\Images\logo_ua.png" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="7" />            
         <Image Grid.Row="1" Grid.Column="0" Source="..\Images\ups.jpg" VerticalAlignment="Center" HorizontalAlignment="Left" Height="384" Width="410" />
-        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="error" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource HeaderFontSize}"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" x:Name="error" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource HeaderFontSize}"></TextBlock>
     </Grid>
 </Page>
 

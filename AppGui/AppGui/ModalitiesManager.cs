@@ -176,6 +176,12 @@ namespace AppGui
             }
         }
 
+
+        private void manageDialogueNotRecognize()
+        {
+            t.Speak("Desculpa, mas essa frase não faz sentido");
+        }
+
         public void displayNews(List<NewsData> newsList)
         {
             window.Dispatcher.BeginInvoke((Action)(() =>
@@ -226,7 +232,7 @@ namespace AppGui
         {
             window.Dispatcher.BeginInvoke((Action)(() =>
             {
-                getCanteensPage(meals, date);
+                Page page = getCanteensPage(meals, date);
                 window.NavigationService.Navigate(page);
                 window.isInHelpPage = false;
             }));
@@ -502,7 +508,6 @@ namespace AppGui
                     phrase = answers.getTicketLineA(ticket);
                     Console.WriteLine("GET INFO ABOUT TICKET A TO PAY FEES");
                 }
-
             }
 
             else
@@ -641,18 +646,3 @@ namespace AppGui
         }
     }
 }
-
-            else if (openCanteens.Count.Equals(1))
-            {
-                phrase = answers.getCanteenMeals(openCanteens.ElementAt(0));
-            }
-
-            else if (openCanteens.Count.Equals(0) && closedCanteens.Count.Equals(1))
-            {
-                phrase = answers.getDisableCanteen(closedCanteens.ElementAt(1));
-            }
-
-            else
-            {
-                phrase = "Encontrei " + openCanteens.Count + " refeições";
-            }
