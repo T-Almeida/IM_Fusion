@@ -69,14 +69,17 @@ public class GenFusionSCXML {
 
         //fg.Redundancy(Speech.CIRCLE_RED, SecondMod., Output.CIRCLE);  //EXAMPLE
         
-        
+        fg.Redundancy(Speech.RED_WEATHER, Guestures.WEATHER, Output.WEATHER_DAYSREL_TOMORROW);
+        fg.Redundancy(Speech.RED_SENHAS, Guestures.SENHAS, Output.SENHAS_GERAL);
+        fg.Redundancy(Speech.RED_PARQUES, Guestures.PARQUES, Output.PARQUE_GERAL);
+        fg.Redundancy(Speech.RED_NEWS, Guestures.NEWS, Output.NEWS_GERAL);
        
         //deixar passar
         fg.Single(Guestures.WEATHER, Output.WEATHER_DAYSREL_TOMORROW); 
         fg.Single(Guestures.PARQUES, Output.PARQUE_GERAL);
         fg.Single(Guestures.CANTEENS, Output.CANTEENS_DAYSREL_TODAY);
         fg.Single(Guestures.SENHAS, Output.SENHAS_GERAL);
-        
+        fg.Single(Guestures.NEWS, Output.NEWS_GERAL);
         
         fg.Build("fusion.scxml");
         

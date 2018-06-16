@@ -10,7 +10,7 @@ public enum Guestures implements IModality{
     CANTEENS("[CANTEENS][TYPE5]",GenFusionSCXML.TIMEOUT),
     PARQUES("[SAS][TYPE1][SUBTYPE1]",GenFusionSCXML.TIMEOUT),
     SENHAS("[SAC][TYPE1]",GenFusionSCXML.TIMEOUT),
-    //NEWS("[NEWS][TYPE1]",GenFusionSCXML.TIMEOUT)
+    NEWS("[NEWS][TYPE1]",GenFusionSCXML.TIMEOUT)
     ;
     
     private String event;

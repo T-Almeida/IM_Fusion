@@ -227,7 +227,11 @@ public enum Output implements IOutput{
     SENHAS_FILA_INTERCAMBIO("[SAC][TYPE7][X][de(_)interc(a_cir)mbio]"),
 
     SENHAS_GERAL("[SAC][TYPE1]"),
-    GERAL_PASS_DONT_RECOGNIZE("[NOTRECOGNIZE]") 
+    
+    
+    NEWS_GERAL("[NEWS][TYPE1]"),
+    
+    GERAL_PASS_DONT_RECOGNIZE("[NOTRECOGNIZE]"), 
     
     //GERAL_PASS_DONT_RECOGNIZE("[NOTRECOGNIZE]")
     ;

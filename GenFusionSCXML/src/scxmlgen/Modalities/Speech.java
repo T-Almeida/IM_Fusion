@@ -186,7 +186,11 @@ public enum Speech implements IModality{
     SENHAS_FILA_EXCHANGE("[X][de(_)exchange]",GenFusionSCXML.TIMEOUT),
     SENHAS_FILA_INTERCAMBIO("[X][de(_)interc(a_cir)mbio]",GenFusionSCXML.TIMEOUT),
     
-    
+    //redundant
+    RED_WEATHER("[WEATHER][TYPE1][tomorrow][tomorrow][]",GenFusionSCXML.TIMEOUT),
+    RED_PARQUES("[SAS][TYPE1][SUBTYPE1]",GenFusionSCXML.TIMEOUT),
+    RED_SENHAS("[SAC][TYPE1]",GenFusionSCXML.TIMEOUT),
+    RED_NEWS("[NEWS][TYPE1]",GenFusionSCXML.TIMEOUT)
     ;
 
  
